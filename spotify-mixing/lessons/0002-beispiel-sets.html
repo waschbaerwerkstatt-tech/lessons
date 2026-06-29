@@ -159,8 +159,8 @@
           Der Weg durchs Camelot-Wheel: Schiebe durch die Tracks. Der aktuelle
           Track ist gruen markiert, die Spur zieht nach und verblasst Schritt um
           Schritt. Tracks ohne belegte Tonart erscheinen nicht auf dem Rad.
-          Der Link unter der Anzeige springt ins YouTube-Video &mdash; bei Yousuke pro
-          Track an die Trackzeit, bei Solomun (noch) zum Set-Start.
+          Der Link unter der Anzeige springt an die Trackstelle im YouTube-Video
+          (Solomun minutengenau, Yousuke sekundengenau).
         </figcaption>
         <div class="cw"></div>
         <input type="range" class="cw-slider" min="1" max="23" value="1" aria-label="Solomun-Set: Track auswaehlen">
@@ -304,8 +304,8 @@
           Der Weg durchs Camelot-Wheel: Schiebe durch die Tracks. Der aktuelle
           Track ist gruen markiert, die Spur zieht nach und verblasst Schritt um
           Schritt. Tracks ohne belegte Tonart erscheinen nicht auf dem Rad.
-          Der Link unter der Anzeige springt ins YouTube-Video &mdash; bei Yousuke pro
-          Track an die Trackzeit, bei Solomun (noch) zum Set-Start.
+          Der Link unter der Anzeige springt an die Trackstelle im YouTube-Video
+          (Solomun minutengenau, Yousuke sekundengenau).
         </figcaption>
         <div class="cw"></div>
         <input type="range" class="cw-slider" min="1" max="16" value="1" aria-label="Yousuke-Set: Track auswaehlen">
@@ -488,12 +488,21 @@
         };
 
         const VIDEO = { solomun: "bk6Xst6euQk", yousuke: "T1tcUfUhR5U" };
-        const TIMES = { yousuke: [46, 174, 278, 518, 865, 1177, 1376, 1528, 1592, 1831, 2159, 2374, 2597, 2909, 3212, 3364] };
+        const TIMES = {
+          solomun: [0, 120, 480, 780, 1140, 1440, 1740, 1980, 2220, 2520, 2940, 3240, 3720, 4080, 4440, 4560, 4800, 5160, 5460, 5700, 6120, 6420, 6840],
+          yousuke: [46, 174, 278, 518, 865, 1177, 1376, 1528, 1592, 1831, 2159, 2374, 2597, 2909, 3212, 3364]
+        };
 
         function fmt(sec) {
-          const m = Math.floor(sec / 60);
+          const h = Math.floor(sec / 3600);
+          const m = Math.floor((sec % 3600) / 60);
           const s = sec % 60;
-          return m + ":" + (s < 10 ? "0" + s : s);
+          const ss = s < 10 ? "0" + s : "" + s;
+          if (h > 0) {
+            const mm = m < 10 ? "0" + m : "" + m;
+            return h + ":" + mm + ":" + ss;
+          }
+          return m + ":" + ss;
         }
 
         const NS = "http://www.w3.org/2000/svg";
