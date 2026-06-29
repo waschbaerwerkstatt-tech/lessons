@@ -1,0 +1,349 @@
+{
+  "schema_version": "1.0",
+  "playlist": {
+    "slug": "solomun-boiler-room-tulum-2015",
+    "name": "Solomun - Boiler Room Tulum 2015",
+    "artist": "Solomun",
+    "event": "Boiler Room, Tulum, Mexico",
+    "date": "2015-01-14",
+    "track_count": 23,
+    "source_urls": [
+      "https://www.setlist.fm/setlist/solomun/2015/boiler-room-tulum-mexico-7b4ebaa4.html"
+    ],
+    "supplemental_sources": [
+      "https://www.livetracklist.com/tracklist/solomun-boiler-room-tulum-2015",
+      "https://brizm.dev/trackid/sets/solomun-boiler-room-tracklist/"
+    ],
+    "notes": [
+      "Track order follows the setlist.fm source provided by the user.",
+      "BPM/key/Camelot data is enrichment from public track-analysis snippets and DJ databases, not Spotify Audio Features.",
+      "Where the live-set analysis and canonical release analysis conflict, canonical release data is preferred and conflicts are noted."
+    ]
+  },
+  "tracks": [
+    {
+      "position": 1,
+      "artist": "International Pony",
+      "title": "Our House",
+      "version": "Solomun Intro",
+      "setlist_title": "Our House (Solumun Intro)",
+      "spotify_query": "International Pony Our House Solomun Intro",
+      "audio": {
+        "bpm": 128,
+        "key": "E major",
+        "camelot": "12B",
+        "confidence": "low",
+        "source_note": "Setlist title conflicts with other tracklist sources that identify the opener as International Pony - Solid Gold (Solomun Intro)."
+      }
+    },
+    {
+      "position": 2,
+      "artist": "Liu Bei",
+      "title": "Atlas World",
+      "version": "Solomun Day Mix",
+      "spotify_query": "Liu Bei Atlas World Solomun Day Mix",
+      "audio": {
+        "bpm": 122,
+        "key": "G# minor",
+        "camelot": "1A",
+        "confidence": "medium",
+        "source_note": "Public Tunebat/Songstats snippet."
+      }
+    },
+    {
+      "position": 3,
+      "artist": "Night Talk",
+      "title": "Gamma",
+      "version": null,
+      "spotify_query": "Night Talk Gamma",
+      "audio": {
+        "bpm": 121,
+        "key": "C# major",
+        "camelot": "3B",
+        "confidence": "medium",
+        "source_note": "Public Tunebat snippet; related recommendations sometimes report a different key."
+      }
+    },
+    {
+      "position": 4,
+      "artist": "Fur Coat",
+      "title": "Monday",
+      "version": null,
+      "spotify_query": "Fur Coat Monday",
+      "audio": {
+        "bpm": 123,
+        "key": "B minor",
+        "camelot": "10A",
+        "confidence": "medium",
+        "source_note": "Public Tunebat snippet."
+      }
+    },
+    {
+      "position": 5,
+      "artist": "FreakMe & Stan Ritch",
+      "title": "Metronome",
+      "version": null,
+      "setlist_artist": "Solomun",
+      "spotify_query": "FreakMe Stan Ritch Metronome",
+      "audio": {
+        "bpm": 123,
+        "key": "F# minor",
+        "camelot": "11A",
+        "confidence": "medium",
+        "source_note": "Setlist.fm lists only 'Metronome'; supplemental tracklists identify FreakMe & Stan Ritch."
+      }
+    },
+    {
+      "position": 6,
+      "artist": "Kollektiv Turmstrasse",
+      "title": "Sorry I Am Late",
+      "version": "Extended",
+      "spotify_query": "Kollektiv Turmstrasse Sorry I Am Late Extended",
+      "audio": {
+        "bpm": 122,
+        "key": "F# major",
+        "camelot": "2B",
+        "confidence": "high",
+        "source_note": "Public Tunebat/Mixgraph snippets for the Extended version."
+      }
+    },
+    {
+      "position": 7,
+      "artist": "SBTRKT feat. Ezra Koenig",
+      "title": "New Dorp. New York",
+      "version": "Solomun Edit",
+      "spotify_query": "SBTRKT Ezra Koenig New Dorp New York Solomun Edit",
+      "audio": {
+        "bpm": 119,
+        "key": "C major",
+        "camelot": "8B",
+        "confidence": "low",
+        "source_note": "Canonical SBTRKT release data found; the specific Solomun Edit did not expose reliable public key/BPM data."
+      }
+    },
+    {
+      "position": 8,
+      "artist": "Thomas Bangalter",
+      "title": "Club Soda",
+      "version": null,
+      "spotify_query": "Thomas Bangalter Club Soda",
+      "audio": {
+        "bpm": 140,
+        "key": "C# major",
+        "camelot": "3B",
+        "confidence": "medium",
+        "source_note": "Public Tunebat snippet; remastered/live-set analyses differ."
+      }
+    },
+    {
+      "position": 9,
+      "artist": "Khan feat. Julee Cruise",
+      "title": "Say Goodbye",
+      "version": "LoSoul She's Homeless Mix",
+      "spotify_query": "Khan Julee Cruise Say Goodbye LoSoul She's Homeless Mix",
+      "audio": {
+        "bpm": 116,
+        "key": "F major",
+        "camelot": "7B",
+        "confidence": "medium",
+        "source_note": "Mixgraph snippet."
+      }
+    },
+    {
+      "position": 10,
+      "artist": "Alix Alvarez",
+      "title": "Fayall",
+      "version": null,
+      "spotify_query": "Alix Alvarez Fayall",
+      "audio": {
+        "bpm": 125,
+        "key": "C major",
+        "camelot": "8B",
+        "confidence": "medium",
+        "source_note": "Public Tunebat snippet."
+      }
+    },
+    {
+      "position": 11,
+      "artist": "Veerus & Maxie Devine",
+      "title": "My Train",
+      "version": null,
+      "spotify_query": "Veerus Maxie Devine My Train",
+      "audio": {
+        "bpm": 123,
+        "key": "F major",
+        "camelot": "7B",
+        "confidence": "medium",
+        "source_note": "Public Tunebat snippet."
+      }
+    },
+    {
+      "position": 12,
+      "artist": "Matthias Meyer",
+      "title": "Tout Va Bien",
+      "version": "with Foremost Poets - Moonraker (Acappella)",
+      "spotify_query": "Matthias Meyer Tout Va Bien Foremost Poets Moonraker Acappella",
+      "audio": {
+        "bpm": 126,
+        "key": "F minor",
+        "camelot": "4A",
+        "confidence": "medium",
+        "source_note": "Public Tunebat snippet for Tout Va Bien; acappella overlay not separately analyzed."
+      }
+    },
+    {
+      "position": 13,
+      "artist": "Jairo Catelo",
+      "title": "Timeless",
+      "version": null,
+      "spotify_query": "Jairo Catelo Timeless",
+      "audio": {
+        "bpm": 120,
+        "key": "C# minor",
+        "camelot": "12A",
+        "confidence": "medium",
+        "source_note": "Public Tunebat snippet."
+      }
+    },
+    {
+      "position": 14,
+      "artist": "SevenDoors",
+      "title": "Movement of Whale",
+      "version": null,
+      "spotify_query": "SevenDoors Movement of Whale",
+      "audio": {
+        "bpm": 122,
+        "key": "G# minor",
+        "camelot": "1A",
+        "confidence": "medium",
+        "source_note": "Public Tunebat snippet."
+      }
+    },
+    {
+      "position": 15,
+      "artist": "Jozif",
+      "title": "Lady B's Lullaby",
+      "version": "Original Mix",
+      "spotify_query": "Jozif Lady B's Lullaby Original Mix",
+      "audio": {
+        "bpm": 120,
+        "key": "E major",
+        "camelot": "12B",
+        "confidence": "medium",
+        "source_note": "Beatport snippet; Tunebat-related snippets also report A major/11B."
+      }
+    },
+    {
+      "position": 16,
+      "artist": "Simion feat. Roland Clark",
+      "title": "Lost",
+      "version": "Club Mix",
+      "spotify_query": "Simion Roland Clark Lost Club Mix",
+      "audio": {
+        "bpm": 118,
+        "key": "C# minor",
+        "camelot": "12A",
+        "confidence": "medium",
+        "source_note": "Public Tunebat snippet."
+      }
+    },
+    {
+      "position": 17,
+      "artist": "Solomun",
+      "title": "Something We All Adore",
+      "version": "Solomun Love Song Mix",
+      "spotify_query": "Solomun Something We All Adore Solomun Love Song Mix",
+      "audio": {
+        "bpm": 120,
+        "key": "B major",
+        "camelot": "1B",
+        "confidence": "low",
+        "source_note": "Public Tunebat data is for the Original Mix; Love Song Mix did not expose reliable public key/BPM data."
+      }
+    },
+    {
+      "position": 18,
+      "artist": "The Phenomenal Handclap Band",
+      "title": "Baby",
+      "version": "Clock Opera Remix",
+      "spotify_query": "The Phenomenal Handclap Band Baby Clock Opera Remix",
+      "audio": {
+        "bpm": 114,
+        "key": "B major",
+        "camelot": "1B",
+        "confidence": "medium",
+        "source_note": "SongBPM snippet; Musicstax-related snippets report C# major/3B at 113 BPM."
+      }
+    },
+    {
+      "position": 19,
+      "artist": "Zola Jesus",
+      "title": "Hikikomori",
+      "version": "Oskar Offermann Remix",
+      "spotify_query": "Zola Jesus Hikikomori Oskar Offermann Remix",
+      "audio": {
+        "bpm": null,
+        "key": null,
+        "camelot": null,
+        "confidence": "unknown",
+        "source_note": "No reliable public BPM/key data found; supplemental live-set analysis reports 122 BPM but does not expose enough canonical release context."
+      }
+    },
+    {
+      "position": 20,
+      "artist": "The Martian",
+      "title": "Tobacco Ties",
+      "version": null,
+      "spotify_query": "The Martian Tobacco Ties",
+      "audio": {
+        "bpm": 133,
+        "key": "C# major",
+        "camelot": "3B",
+        "confidence": "high",
+        "source_note": "Public Tunebat/Songstats snippet."
+      }
+    },
+    {
+      "position": 21,
+      "artist": "WestBam & Nena",
+      "title": "Oldschool Baby",
+      "version": "Piano Mix",
+      "spotify_query": "WestBam Nena Oldschool Baby Piano Mix",
+      "audio": {
+        "bpm": 130,
+        "key": "A# minor",
+        "camelot": "3A",
+        "confidence": "high",
+        "source_note": "Public Tunebat and Beatport snippets."
+      }
+    },
+    {
+      "position": 22,
+      "artist": "Mousse T. & Hot 'n' Juicy & Inaya Day",
+      "title": "Horny",
+      "version": "Radio Slave & Thomas Gandey Just 17 Mix",
+      "spotify_query": "Mousse T Hot n Juicy Inaya Day Horny Radio Slave Thomas Gandey Just 17 Mix",
+      "audio": {
+        "bpm": 124,
+        "key": "G# minor",
+        "camelot": "1A",
+        "confidence": "high",
+        "source_note": "Beatport/Mixgraph snippets."
+      }
+    },
+    {
+      "position": 23,
+      "artist": "Louie Austen",
+      "title": "Hoping",
+      "version": "Herbert's High Dub",
+      "spotify_query": "Louie Austen Hoping Herbert's High Dub",
+      "audio": {
+        "bpm": 124,
+        "key": "E minor",
+        "camelot": "9A",
+        "confidence": "medium",
+        "source_note": "Public Tunebat snippet; supplemental live-set analysis reports 122 BPM/B minor."
+      }
+    }
+  ]
+}

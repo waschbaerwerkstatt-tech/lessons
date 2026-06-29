@@ -1,0 +1,328 @@
+{
+  "schema_version": "1.0",
+  "playlist": {
+    "slug": "yousuke-yukimatsu-boiler-room",
+    "name": "YOUSUKE YUKIMATSU - Boiler Room",
+    "artist": "YOUSUKE YUKIMATSU",
+    "event": "Boiler Room",
+    "track_count": 16,
+    "source_urls": [
+      "https://set79.com/tracklist/soundcloud.com/flavio-almeida-99126045/u-ukeur-uk1mat-u-boiler-room"
+    ],
+    "notes": [
+      "Track order, timestamps, Spotify links, YouTube links and Beatport links follow the Set79 source provided by the user.",
+      "BPM/key/Camelot data is enrichment from public track-analysis snippets and DJ databases, not Spotify Audio Features.",
+      "Some names are preserved from Set79 even where public sources suggest a more specific Spotify title or remix."
+    ]
+  },
+  "tracks": [
+    {
+      "position": 1,
+      "start_time": "00:00:46",
+      "artist": "100 gecs",
+      "title": "Dumbest Girl Alive",
+      "source_track_name": "Dumbest Girl Alive - 100 gecs",
+      "links": {
+        "spotify": "https://open.spotify.com/track/0qMZXgcLfkl5RI3q50KHMH",
+        "youtube": "https://www.youtube.com/watch?v=oXrbMDww9ss",
+        "beatport": "https://www.beatport.com/track/dumbest-girl-alive/20842458/"
+      },
+      "audio": {
+        "bpm": 150,
+        "key": "A minor",
+        "camelot": "8A",
+        "confidence": "high",
+        "source_note": "Public Tunebat/Songstats snippet."
+      }
+    },
+    {
+      "position": 2,
+      "start_time": "00:02:54",
+      "artist": "Tzusing",
+      "title": "Residual Stress",
+      "source_track_name": "Residual Stress - Tzusing",
+      "links": {
+        "spotify": "https://open.spotify.com/track/41QC4JsoYNy5LwW679i6Yx",
+        "youtube": "https://www.youtube.com/watch?v=SjOHKpg2oVc",
+        "beatport": null
+      },
+      "audio": {
+        "bpm": 145,
+        "key": "G# minor",
+        "camelot": "1A",
+        "confidence": "high",
+        "source_note": "Public Tunebat/Songstats snippet."
+      }
+    },
+    {
+      "position": 3,
+      "start_time": "00:04:38",
+      "artist": "Skrillex & Nai Barghouti",
+      "title": "XENA",
+      "version": "Mixed",
+      "source_track_name": "XENA (Mixed) - Skrillex & Nai Barghouti",
+      "links": {
+        "spotify": "https://open.spotify.com/track/1gMT8boiNdGWiYy7HQHyZk",
+        "youtube": "https://www.youtube.com/watch?v=T7SvN0dkQps",
+        "beatport": null
+      },
+      "audio": {
+        "bpm": 145,
+        "key": "C# major",
+        "camelot": "3B",
+        "confidence": "medium",
+        "source_note": "Public Tunebat snippet for the mixed Spotify track."
+      }
+    },
+    {
+      "position": 4,
+      "start_time": "00:08:38",
+      "artist": "Underworld",
+      "title": "Moaner",
+      "source_track_name": "Moaner - Underworld",
+      "links": {
+        "spotify": "https://open.spotify.com/track/42MDEG1z2DNSAtx8y0jZ6u",
+        "youtube": null,
+        "beatport": null
+      },
+      "audio": {
+        "bpm": 140,
+        "key": "A# minor",
+        "camelot": "3A",
+        "confidence": "medium",
+        "source_note": "Public Tunebat snippet."
+      }
+    },
+    {
+      "position": 5,
+      "start_time": "00:14:25",
+      "artist": "The Prodigy",
+      "title": "Firestarter",
+      "version": "Empirion Mix",
+      "source_track_name": "Firestarter (Empirion Mix) - The Prodigy",
+      "links": {
+        "spotify": "https://open.spotify.com/track/1C2YQfKzDgudqrcuWi9s1A",
+        "youtube": null,
+        "beatport": "https://www.beatport.com/track/firestarter/14182525/"
+      },
+      "audio": {
+        "bpm": 140,
+        "key": "A# minor",
+        "camelot": "3A",
+        "confidence": "medium",
+        "source_note": "Public Tunebat snippet; Beatport snippet for this listing reports 87 BPM/Bb major, likely a different tempo interpretation."
+      }
+    },
+    {
+      "position": 6,
+      "start_time": "00:19:37",
+      "artist": "El Gordo",
+      "title": "Kuliki",
+      "source_track_name": "Kuliki - El Gordo",
+      "links": {
+        "spotify": null,
+        "youtube": null,
+        "beatport": null
+      },
+      "audio": {
+        "bpm": null,
+        "key": null,
+        "camelot": null,
+        "confidence": "unknown",
+        "source_note": "No reliable public BPM/key data found for the Set79 identification."
+      }
+    },
+    {
+      "position": 7,
+      "start_time": "00:22:56",
+      "artist": "Romy & Fred again..",
+      "title": "Strong",
+      "source_track_name": "Strong - Romy & Fred again..",
+      "links": {
+        "spotify": "https://open.spotify.com/track/5bF00VrMY3FwnQDgoP4Gnk",
+        "youtube": "https://www.youtube.com/watch?v=3aFF09jjZwk",
+        "beatport": null
+      },
+      "audio": {
+        "bpm": 134,
+        "key": "E major",
+        "camelot": "12B",
+        "confidence": "medium",
+        "source_note": "Public Tunebat/Songstats snippet."
+      }
+    },
+    {
+      "position": 8,
+      "start_time": "00:25:28",
+      "artist": "3Phaz",
+      "title": "Drum Track",
+      "source_track_name": "Drum Track - 3Phaz",
+      "links": {
+        "spotify": "https://open.spotify.com/track/6F1sq4Pbj129fFRHUj1GyU",
+        "youtube": "https://www.youtube.com/watch?v=UbMY68ctO8I",
+        "beatport": "https://www.beatport.com/track/drum-track/17684927/"
+      },
+      "audio": {
+        "bpm": 130,
+        "key": "G major",
+        "camelot": "9B",
+        "confidence": "high",
+        "source_note": "Public Tunebat/Songstats snippet."
+      }
+    },
+    {
+      "position": 9,
+      "start_time": "00:26:32",
+      "artist": "For Those I Love",
+      "title": "I Have a Love",
+      "version": "Overmono Remix",
+      "source_track_name": "I Have a Love (Overmono Remix) - For Those I Love",
+      "links": {
+        "spotify": "https://open.spotify.com/track/5MmKCuXDk2WTMjtdmIbApT",
+        "youtube": null,
+        "beatport": null
+      },
+      "audio": {
+        "bpm": 129,
+        "key": "F minor",
+        "camelot": "4A",
+        "confidence": "medium",
+        "source_note": "Public Tunebat snippet."
+      }
+    },
+    {
+      "position": 10,
+      "start_time": "00:30:31",
+      "artist": "The Chemical Brothers",
+      "title": "The Darkness That You Fear",
+      "source_track_name": "The Darkness That You Fear - The Chemical Brothers",
+      "links": {
+        "spotify": "https://open.spotify.com/track/35FGcyIC9Pai3BxcJJYTNk",
+        "youtube": "https://www.youtube.com/watch?v=b-mGA4V2LK0",
+        "beatport": "https://www.beatport.com/track/the-darkness-that-you-fear/27271563/"
+      },
+      "audio": {
+        "bpm": null,
+        "key": null,
+        "camelot": null,
+        "confidence": "unknown",
+        "source_note": "Set79 title and Spotify ID appear to point to a remix/listing where public snippets were inconclusive."
+      }
+    },
+    {
+      "position": 11,
+      "start_time": "00:35:59",
+      "artist": "The Chemical Brothers",
+      "title": "Free Yourself",
+      "source_track_name": "Free Yourself - The Chemical Brothers",
+      "links": {
+        "spotify": "https://open.spotify.com/track/3wbdyLeVrYGv5wfSQSqwMU",
+        "youtube": "https://www.youtube.com/watch?v=7wzR_BVFsUU",
+        "beatport": null
+      },
+      "audio": {
+        "bpm": 125,
+        "key": "F# minor",
+        "camelot": "11A",
+        "confidence": "medium",
+        "source_note": "Public Tunebat snippet."
+      }
+    },
+    {
+      "position": 12,
+      "start_time": "00:39:34",
+      "artist": "Jamie xx",
+      "title": "The Rest Is Noise",
+      "source_track_name": "The Rest Is Noise - Jamie xx",
+      "links": {
+        "spotify": "https://open.spotify.com/track/1MhQrrQjPRL8o6m18viaZ1",
+        "youtube": null,
+        "beatport": null
+      },
+      "audio": {
+        "bpm": 125,
+        "key": "C minor",
+        "camelot": "5A",
+        "confidence": "medium",
+        "source_note": "Public Tunebat snippet."
+      }
+    },
+    {
+      "position": 13,
+      "start_time": "00:43:17",
+      "artist": "SOPHIE",
+      "title": "Whole New World/Pretend World",
+      "source_track_name": "Whole New World/Pretend World - SOPHIE",
+      "links": {
+        "spotify": "https://open.spotify.com/track/5Ed7cKmqtYerGm6SJGfjCT",
+        "youtube": null,
+        "beatport": null
+      },
+      "audio": {
+        "bpm": 125,
+        "key": "C# major",
+        "camelot": "3B",
+        "confidence": "medium",
+        "source_note": "Public Tunebat snippet."
+      }
+    },
+    {
+      "position": 14,
+      "start_time": "00:48:29",
+      "artist": "Skrillex",
+      "title": "With You, Friends",
+      "version": "Long Drive",
+      "source_track_name": "With You, Friends (Long Drive) - Skrillex",
+      "links": {
+        "spotify": "https://open.spotify.com/track/6gowYUVBi2MZibmuosT8mh",
+        "youtube": "https://www.youtube.com/watch?v=fq-geJ9UwG4",
+        "beatport": "https://www.beatport.com/track/with-you-friends-long-drive/27277765/"
+      },
+      "audio": {
+        "bpm": 120,
+        "key": "D major",
+        "camelot": "10B",
+        "confidence": "medium",
+        "source_note": "Public Tunebat/Songstats snippet."
+      }
+    },
+    {
+      "position": 15,
+      "start_time": "00:53:32",
+      "artist": "Karla Borecky",
+      "title": "The Passing of Clouds",
+      "source_track_name": "The Passing of Clouds - Karla Borecky",
+      "links": {
+        "spotify": "https://open.spotify.com/track/60O1G6hEhddsioWxkUAzx7",
+        "youtube": "https://www.youtube.com/watch?v=BwYYM2sxOHk",
+        "beatport": null
+      },
+      "audio": {
+        "bpm": null,
+        "key": null,
+        "camelot": null,
+        "confidence": "unknown",
+        "source_note": "No reliable public BPM/key data found."
+      }
+    },
+    {
+      "position": 16,
+      "start_time": "00:56:04",
+      "artist": "Lorenzo Senni",
+      "title": "THINK BIG",
+      "source_track_name": "THINK BIG - Lorenzo Senni",
+      "links": {
+        "spotify": "https://open.spotify.com/track/6UFwS4Hm9ESsR4D4JJj5ds",
+        "youtube": "https://www.youtube.com/watch?v=0UH2tqHTi_M",
+        "beatport": "https://www.beatport.com/track/think-big/13481732/"
+      },
+      "audio": {
+        "bpm": 134,
+        "key": "A# major",
+        "camelot": "6B",
+        "confidence": "medium",
+        "source_note": "Public Tunebat snippet."
+      }
+    }
+  ]
+}
