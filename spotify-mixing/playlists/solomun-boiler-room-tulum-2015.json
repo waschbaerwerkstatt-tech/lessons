@@ -43,11 +43,11 @@
       "version": "Solomun Day Mix",
       "spotify_query": "Liu Bei Atlas World Solomun Day Mix",
       "audio": {
-        "bpm": 122,
-        "key": "G# minor",
-        "camelot": "1A",
-        "confidence": "medium",
-        "source_note": "Public Tunebat/Songstats snippet."
+        "bpm": 120,
+        "key": "A minor",
+        "camelot": "8A",
+        "confidence": "high",
+        "source_note": "Spotify Mix in-app data (user screenshot): 120 BPM, Camelot 8A. Supersedes earlier Tunebat estimate (122 BPM / 1A)."
       }
     },
     {
@@ -57,11 +57,11 @@
       "version": null,
       "spotify_query": "Night Talk Gamma",
       "audio": {
-        "bpm": 121,
-        "key": "C# major",
-        "camelot": "3B",
-        "confidence": "medium",
-        "source_note": "Public Tunebat snippet; related recommendations sometimes report a different key."
+        "bpm": 124,
+        "key": "Eb minor",
+        "camelot": "2A",
+        "confidence": "high",
+        "source_note": "Spotify Mix in-app data (user screenshot): 124 BPM, Camelot 2A. Supersedes earlier Tunebat estimate (121 BPM / 3B)."
       }
     },
     {
@@ -117,8 +117,8 @@
         "bpm": 119,
         "key": "C major",
         "camelot": "8B",
-        "confidence": "low",
-        "source_note": "Canonical SBTRKT release data found; the specific Solomun Edit did not expose reliable public key/BPM data."
+        "confidence": "high",
+        "source_note": "Spotify Mix in-app data (user screenshot) confirms 119 BPM, Camelot 8B."
       }
     },
     {
@@ -171,10 +171,10 @@
       "spotify_query": "Veerus Maxie Devine My Train",
       "audio": {
         "bpm": 123,
-        "key": "F major",
-        "camelot": "7B",
-        "confidence": "medium",
-        "source_note": "Public Tunebat snippet."
+        "key": "C major",
+        "camelot": "8B",
+        "confidence": "high",
+        "source_note": "Spotify Mix in-app data (user screenshot): 123 BPM, Camelot 8B. Supersedes earlier Tunebat estimate (F major / 7B)."
       }
     },
     {
@@ -255,10 +255,10 @@
       "spotify_query": "Solomun Something We All Adore Solomun Love Song Mix",
       "audio": {
         "bpm": 120,
-        "key": "B major",
-        "camelot": "1B",
-        "confidence": "low",
-        "source_note": "Public Tunebat data is for the Original Mix; Love Song Mix did not expose reliable public key/BPM data."
+        "key": "E minor",
+        "camelot": "9A",
+        "confidence": "high",
+        "source_note": "Spotify Mix in-app data (user screenshot): 120 BPM, Camelot 9A. Supersedes earlier Tunebat estimate (B major / 1B)."
       }
     },
     {

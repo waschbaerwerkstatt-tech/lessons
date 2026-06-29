@@ -298,11 +298,11 @@
         "beatport": null
       },
       "audio": {
-        "bpm": null,
-        "key": null,
-        "camelot": null,
-        "confidence": "unknown",
-        "source_note": "No reliable public BPM/key data found."
+        "bpm": 70,
+        "key": "D major",
+        "camelot": "10B",
+        "confidence": "high",
+        "source_note": "Spotify Mix in-app data (user screenshot): 70 BPM, Camelot 10B."
       }
     },
     {
