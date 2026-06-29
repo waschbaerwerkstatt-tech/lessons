@@ -11,6 +11,20 @@
         gap: 14px;
       }
 
+      .group {
+        margin: 26px 0 2px;
+        font-family: ui-sans-serif, system-ui, sans-serif;
+        font-size: 0.82rem;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--accent);
+      }
+
+      .group:first-of-type {
+        margin-top: 8px;
+      }
+
       .entry {
         border-top: 1px solid var(--line);
         padding-top: 14px;
@@ -18,6 +32,11 @@
 
       .entry h2 {
         margin: 0 0 6px;
+        font-size: 1.3rem;
+      }
+
+      .entry p {
+        margin: 0;
       }
     </style>
   </head>
@@ -28,193 +47,199 @@
         <div class="eyebrow">Referenz 0002</div>
         <h1>Glossar</h1>
         <p class="lede">
-          Begriffe fuer Spotify Mix, Camelot-System und Uebergangsentscheidungen.
-          Kurz genug zum Nachschlagen, praezise genug fuer echte Hoerentscheidungen.
+          Begriffe rund um Spotify Mix, das Camelot-System und
+          Uebergangsentscheidungen. Nach Thema gruppiert, jeder Eintrag kurz
+          genug zum Nachschlagen und konkret genug fuer echte Hoerentscheidungen.
         </p>
       </header>
 
       <section class="callout">
-        <h2>Die Camelot-Korrektur</h2>
+        <h2>Grundregel: kompatibel heisst nah, nicht gegenueber</h2>
         <p>
-          Ja: Es gibt ein Wheel. Aber "gegenueber" heisst nicht automatisch
-          "ergaenzt sich weich". Bei Mixed In Key sind die sicheren Bewegungen
-          gleicher Key, benachbarte Zahlen und gleiche Zahl mit anderem Letter.
-          Ein Sprung wie <span class="pill">3A -> 9A</span> wird dort als
-          extreme, aufmerksamkeitsstarke Bewegung beschrieben. Nutze ihn als
-          bewussten Bruch, nicht als Standardblend.
+          Kompatible Tonarten liegen auf dem Camelot-Wheel nah beieinander:
+          gleicher Key, benachbarte Zahl oder gleiche Zahl mit anderem
+          Buchstaben. Ein gegenueberliegendes Feld ergaenzt sich nicht
+          automatisch weich &mdash; ein Sprung wie <span class="pill">3A &rarr; 9A</span>
+          gilt als extreme, aufmerksamkeitsstarke Bewegung und eignet sich als
+          bewusster Bruch, nicht als Standardblend.
           <a href="https://mixedinkey.com/harmonic-mixing-guide/">Quelle: Mixed In Key Harmonic Mixing Guide</a>.
         </p>
       </section>
 
-      <section>
-        <h2>Camelot-Ring als Denkmodell</h2>
-        <p>
-          Die Zahlen laufen im Kreis. Nachbarn sind harmonisch nah; gegenueber
-          liegt weit weg und erzeugt Spannung.
-        </p>
-        <figure>
-          <img class="diagram" src="../assets/camelot-wheel.svg" alt="Camelot-Wheel mit A-Minor- und B-Major-Ring; 3A ist Start, 2A, 4A und 3B sind sichere Bewegungen, 9A ist als Curveball markiert">
-          <figcaption>
-            Eigene Kursgrafik: 3A als Startpunkt. Blau markiert die sicheren
-            Bewegungen; Orange markiert den Gegenpol als bewussten Curveball.
-            Die Tonartnamen sind englisch: B entspricht deutschem H, Bb deutschem B.
-          </figcaption>
-        </figure>
-      </section>
+      <figure>
+        <img class="diagram" src="../assets/camelot-wheel.svg" alt="Camelot-Wheel mit A-Minor- und B-Major-Ring; 3A als Startpunkt, 2A, 4A und 3B als sichere Bewegungen, 9A als Curveball">
+        <figcaption>
+          Startpunkt 3A: blau markiert die sicheren Bewegungen, orange den
+          Gegenpol als bewussten Curveball. Die Tonartnamen sind englisch &mdash;
+          B entspricht deutschem H, Bb deutschem B.
+        </figcaption>
+      </figure>
 
       <section class="glossary">
-        <article class="entry" id="bpm">
-          <h2>BPM</h2>
-          <p>
-            Beats per minute: die Geschwindigkeit des Pulses. Kleine Differenzen
-            sind leichter zu blenden; grosse Differenzen brauchen eher Cut,
-            Ausblende oder einen klaren rhythmischen Trick.
-          </p>
-        </article>
+        <h2 class="group">Tonart und Harmonie</h2>
 
         <article class="entry" id="camelot-key">
           <h2>Camelot-Key</h2>
           <p>
-            Ein DJ-Code fuer Tonarten, zum Beispiel <span class="pill">3A</span>
-            oder <span class="pill">3B</span>. Die Zahl markiert die Position
-            auf dem Wheel, der Letter unterscheidet die beiden Ringe.
+            Ein DJ-Code fuer Tonarten, etwa <span class="pill">3A</span> oder
+            <span class="pill">3B</span>. Die Zahl gibt die Position auf dem
+            Camelot-Wheel an, der Buchstabe den Ring: A steht fuer Moll, B fuer
+            Dur. Nahe Codes lassen sich harmonisch leichter verbinden.
           </p>
         </article>
 
         <article class="entry" id="camelot-wheel">
           <h2>Camelot-Wheel</h2>
           <p>
-            Ein Kreis aus 12 Zahlen mit zwei Ringen. Praktisch ist nicht die
-            Musiktheorie dahinter, sondern die Navigationsregel: gleiche Zelle,
-            Nachbarzelle oder gleicher Zahlenplatz mit anderem Letter ist
-            meistens kompatibel.
+            Ein Kreis aus zwoelf Zahlen mit zwei Ringen. Praktisch zaehlt nicht
+            die Musiktheorie dahinter, sondern die Navigationsregel: gleiche
+            Zelle, Nachbarzelle oder gleiche Zahl mit anderem Buchstaben ist
+            meist kompatibel, weit entfernte Felder erzeugen Spannung.
           </p>
         </article>
 
         <article class="entry" id="harmonic-mixing">
           <h2>Harmonic Mixing</h2>
           <p>
-            Uebergaenge so planen, dass Tonarten nicht unangenehm reiben. Das
-            ersetzt nicht das Hoeren, reduziert aber viele offensichtliche
-            Harmonie-Clashes.
+            Uebergaenge so waehlen, dass sich Tonarten nicht unangenehm reiben.
+            Das ersetzt nicht das Hoeren, raeumt aber die offensichtlichen
+            Harmonie-Clashes aus dem Weg.
           </p>
         </article>
 
         <article class="entry" id="relative-major-minor">
           <h2>Relative Major/Minor</h2>
           <p>
-            Im Camelot-Kontext: gleiche Zahl, anderer Letter, zum Beispiel
-            <span class="pill">3A -> 3B</span>. Das klingt verwandt, kann aber
-            heller oder dunkler wirken.
+            Gleiche Zahl, anderer Buchstabe, etwa
+            <span class="pill">3A &rarr; 3B</span>. Eng verwandte Tonarten, die
+            heller (Dur) oder dunkler (Moll) wirken &mdash; eine sichere, subtile
+            Bewegung.
           </p>
         </article>
 
         <article class="entry" id="adjacent-key">
           <h2>Adjacent Key</h2>
           <p>
-            Direkt benachbarte Zahl auf demselben Ring, zum Beispiel
-            <span class="pill">3A -> 2A</span> oder
-            <span class="pill">3A -> 4A</span>. Das ist eine sichere Bewegung
-            fuer harmonisch angenehme, aber nicht komplett statische Sets.
+            Direkt benachbarte Zahl auf demselben Ring, etwa
+            <span class="pill">3A &rarr; 2A</span> oder
+            <span class="pill">3A &rarr; 4A</span>. Bleibt harmonisch frisch,
+            ohne statisch zu wirken, und gilt als verlaessliche Standardbewegung.
           </p>
         </article>
 
         <article class="entry" id="gegenpol">
           <h2>Gegenpol / Curveball</h2>
           <p>
-            Eine weit entfernte Camelot-Bewegung, oft sechs Zahlen entfernt,
-            zum Beispiel <span class="pill">3A -> 9A</span>. Sie kann
-            ueberraschend wirken, aber ist nicht weich-kompatibel. In Spotify
-            Mix eher kurz, gefiltert oder auf eine harte Phrase setzen.
+            Eine weit entfernte Camelot-Bewegung, meist sechs Zahlen entfernt
+            (<span class="pill">3A &rarr; 9A</span>). Wirkt ueberraschend, ist
+            aber nicht weich kompatibel &mdash; eher kurz, gefiltert oder auf
+            eine harte Phrase gesetzt.
           </p>
         </article>
 
-        <article class="entry" id="phrase">
-          <h2>Phrase</h2>
+        <h2 class="group">Tempo und Form</h2>
+
+        <article class="entry" id="bpm">
+          <h2>BPM</h2>
           <p>
-            Ein musikalischer Abschnitt, oft in 4, 8, 16 oder 32 Takten
-            spuerbar. Gute Uebergaenge landen an Phrasengrenzen, also dort, wo
-            ein Song ohnehin neu atmet.
+            Beats per minute, das Tempo des Pulses. Kleine Differenzen lassen
+            sich leicht blenden; grosse verlangen eher Cut, Ausblende oder einen
+            klaren rhythmischen Trick.
           </p>
         </article>
 
         <article class="entry" id="takt">
           <h2>Takt</h2>
           <p>
-            Eine kleine Zeiteinheit der Musik. In deinem Screenshot bedeutet
-            <span class="pill">2 Takte</span>: Spotify legt den Blend sehr kurz
-            an, eher kompakt als ausgedehnt.
+            Die kleinste gezaehlte Zeiteinheit der Musik. Spotify gibt die
+            Uebergangslaenge in Takten an: wenige Takte ergeben einen kompakten
+            Wechsel, mehr Takte einen ausgedehnten Blend.
+          </p>
+        </article>
+
+        <article class="entry" id="phrase">
+          <h2>Phrase</h2>
+          <p>
+            Ein musikalischer Abschnitt, meist ueber 4, 8, 16 oder 32 Takte
+            spuerbar. Uebergaenge an Phrasengrenzen wirken natuerlich, weil der
+            Song dort ohnehin neu ansetzt.
           </p>
         </article>
 
         <article class="entry" id="downbeat">
           <h2>Downbeat</h2>
           <p>
-            Der gefuehlte erste Schlag eines Takts oder Abschnitts. Harte
-            Genrewechsel klingen oft besser, wenn der neue Track genau auf
-            einem Downbeat beginnt.
+            Der gefuehlte erste Schlag eines Takts oder Abschnitts. Besonders
+            harte Genrewechsel sitzen sauberer, wenn der neue Track genau auf
+            einem Downbeat einsetzt.
           </p>
         </article>
+
+        <h2 class="group">Uebergangstechnik</h2>
 
         <article class="entry" id="blend">
           <h2>Blend</h2>
           <p>
-            Beide Songs laufen fuer eine Weile gleichzeitig. Funktioniert gut,
-            wenn Tempo, Tonart und Bass nicht gegeneinander kaempfen.
+            Beide Songs laufen eine Weile gleichzeitig. Traegt, solange Tempo,
+            Tonart und Bass nicht gegeneinander arbeiten.
           </p>
         </article>
 
         <article class="entry" id="cut">
           <h2>Cut</h2>
           <p>
-            Der alte Song endet abrupt oder fast abrupt, der neue beginnt klar.
-            Das ist kein Fehler: Bei grossen Genre-, Tempo- oder Tonartbruechen
-            ist ein Cut oft musikalischer als ein langer Blend.
-          </p>
-        </article>
-
-        <article class="entry" id="eq">
-          <h2>EQ</h2>
-          <p>
-            Equalizer: getrennte Kontrolle ueber Bass, Mitten und Hoehen. Beim
-            Mixen ist besonders der Bass entscheidend, weil zwei Kick/Bass-Fundamente
-            gleichzeitig schnell unsauber werden.
+            Der alte Song endet fast abrupt, der neue setzt klar ein. Kein
+            Notbehelf: bei grossen Genre-, Tempo- oder Tonartbruechen oft
+            musikalischer als ein langer Blend.
           </p>
         </article>
 
         <article class="entry" id="basswechsel">
           <h2>Basswechsel</h2>
           <p>
-            Der Moment, in dem das Bassfundament vom alten zum neuen Song
-            uebergeben wird. Ein sauberer Basswechsel ist oft der Unterschied
-            zwischen elegant und matschig.
+            Der Moment, in dem das Bassfundament vom alten auf den neuen Song
+            uebergeben wird. Ein sauberer Basswechsel entscheidet oft zwischen
+            elegant und matschig.
+          </p>
+        </article>
+
+        <h2 class="group">Klang und Frequenz</h2>
+
+        <article class="entry" id="eq">
+          <h2>EQ</h2>
+          <p>
+            Equalizer: getrennte Kontrolle ueber Bass, Mitten und Hoehen. Beim
+            Mixen ist der Bass am heikelsten, weil zwei Kick-/Bassfundamente
+            gleichzeitig schnell unsauber werden.
           </p>
         </article>
 
         <article class="entry" id="filter">
           <h2>Filter</h2>
           <p>
-            Ein Effekt, der Frequenzen ausduennt. Ein Tiefpass laesst eher
-            tiefe Anteile durch; ein Hochpass nimmt Bass weg. Filter helfen,
-            einen Bruch kontrolliert erscheinen zu lassen.
+            Ein Effekt, der Frequenzbaender ausduennt. Ein Tiefpass laesst tiefe
+            Anteile durch, ein Hochpass nimmt Bass weg. Filter lassen einen Bruch
+            kontrolliert erscheinen.
           </p>
         </article>
+
+        <h2 class="group">Beurteilung</h2>
 
         <article class="entry" id="energy">
           <h2>Energy</h2>
           <p>
-            Die gefuehlte Intensitaet eines Songs: Drive, Dichte, Lautheit,
-            Drum-Anteil, Vocal-Druck. Fuer Genregrenzen ist Energy oft die
-            bessere Bruecke als Genre selbst.
+            Die gefuehlte Intensitaet eines Songs aus Drive, Dichte, Lautheit,
+            Drum- und Vocal-Druck. Ueber Genregrenzen hinweg oft die
+            tragfaehigere Bruecke als das Genre selbst.
           </p>
         </article>
 
         <article class="entry" id="clash">
           <h2>Clash</h2>
           <p>
-            Unangenehme Reibung: zwei Vocals, zwei Basslines, unpassende Akkorde
-            oder rhythmisches Stolpern. Ein Clash ist ein Hinweis, Overlap zu
-            kuerzen oder einen Parameter zu isolieren.
+            Hoerbare Reibung: zwei Vocals, zwei Basslines, unpassende Akkorde
+            oder rhythmisches Stolpern. Ein Signal, die Ueberlappung zu kuerzen
+            oder einen Parameter zu isolieren.
           </p>
         </article>
       </section>

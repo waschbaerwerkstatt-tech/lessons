@@ -19,7 +19,6 @@ Uebergaenge, die trotzdem musikalisch absichtlich klingen.
 ## Constraints
 - Kurze, interaktive Lektionen auf Deutsch.
 - Praxis direkt an Spotify Mix, nicht an kompletter DJ-Hardware.
-- Referenzen sollen schnell wiederholbar und druckbar sein.
 - Der Workspace wird oeffentlich ueber GitHub Pages veroeffentlicht; Inhalte
   sind damit fuer Fremde lesbar und sollten keine privaten Daten enthalten.
 
