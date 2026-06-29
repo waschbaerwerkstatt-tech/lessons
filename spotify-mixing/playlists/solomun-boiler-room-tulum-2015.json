@@ -93,10 +93,10 @@
       "spotify_query": "FreakMe Stan Ritch Metronome",
       "audio": {
         "bpm": 123,
-        "key": "F# minor",
-        "camelot": "11A",
-        "confidence": "medium",
-        "source_note": "Setlist.fm lists only 'Metronome'; supplemental tracklists identify FreakMe & Stan Ritch."
+        "key": "F# major",
+        "camelot": "2B",
+        "confidence": "high",
+        "source_note": "Spotify Mix in-app data (user screenshot): 123 BPM, Camelot 2B. Supersedes earlier Tunebat estimate (F# minor / 11A). Setlist.fm lists only 'Metronome'; supplemental tracklists identify FreakMe & Stan Ritch."
       }
     },
     {
@@ -111,7 +111,7 @@
         "key": "F# major",
         "camelot": "2B",
         "confidence": "high",
-        "source_note": "Public Tunebat/Mixgraph snippets for the Extended version."
+        "source_note": "Spotify Mix in-app data (user screenshot) confirms 122 BPM, Camelot 2B. (Spotify lists a Summer mix; values match.)"
       }
     },
     {
@@ -168,10 +168,10 @@
       "spotify_query": "Alix Alvarez Fayall",
       "audio": {
         "bpm": 125,
-        "key": "C major",
-        "camelot": "8B",
-        "confidence": "medium",
-        "source_note": "Public Tunebat snippet."
+        "key": "E minor",
+        "camelot": "9A",
+        "confidence": "high",
+        "source_note": "Spotify Mix in-app data (user screenshot): 125 BPM, Camelot 9A. Supersedes earlier Tunebat estimate (C major / 8B)."
       }
     },
     {
@@ -213,10 +213,10 @@
       "spotify_query": "Jairo Catelo Timeless",
       "audio": {
         "bpm": 120,
-        "key": "C# minor",
-        "camelot": "12A",
-        "confidence": "medium",
-        "source_note": "Public Tunebat snippet."
+        "key": "Eb major",
+        "camelot": "5B",
+        "confidence": "high",
+        "source_note": "Spotify Mix in-app data (user screenshot): 120 BPM, Camelot 5B. Supersedes earlier Tunebat estimate (C# minor / 12A)."
       }
     },
     {
@@ -245,8 +245,8 @@
         "bpm": 120,
         "key": "E major",
         "camelot": "12B",
-        "confidence": "medium",
-        "source_note": "Beatport snippet; Tunebat-related snippets also report A major/11B."
+        "confidence": "high",
+        "source_note": "Spotify Mix in-app data (user screenshot) confirms 120 BPM, Camelot 12B."
       }
     },
     {
@@ -258,10 +258,10 @@
       "spotify_query": "Simion Roland Clark Lost Club Mix",
       "audio": {
         "bpm": 118,
-        "key": "C# minor",
-        "camelot": "12A",
-        "confidence": "medium",
-        "source_note": "Public Tunebat snippet."
+        "key": "E major",
+        "camelot": "12B",
+        "confidence": "high",
+        "source_note": "Spotify Mix in-app data (user screenshot): 118 BPM, Camelot 12B. Supersedes earlier Tunebat estimate (C# minor / 12A)."
       }
     },
     {
@@ -351,7 +351,7 @@
         "key": "G# minor",
         "camelot": "1A",
         "confidence": "high",
-        "source_note": "Beatport/Mixgraph snippets."
+        "source_note": "Spotify Mix in-app data (user screenshot) confirms 124 BPM, Camelot 1A."
       }
     },
     {
@@ -365,8 +365,8 @@
         "bpm": 124,
         "key": "E minor",
         "camelot": "9A",
-        "confidence": "medium",
-        "source_note": "Public Tunebat snippet; supplemental live-set analysis reports 122 BPM/B minor."
+        "confidence": "high",
+        "source_note": "Spotify Mix in-app data (user screenshot) confirms 124 BPM, Camelot 9A."
       }
     }
   ]
