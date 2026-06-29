@@ -31,6 +31,41 @@
       .phase h3 {
         font-size: 1.05rem;
       }
+
+      .camelot-path {
+        margin: 20px 0 8px;
+      }
+
+      .cw svg {
+        width: min(100%, 440px);
+        height: auto;
+        display: block;
+        margin: 4px auto;
+      }
+
+      .cw-slider {
+        width: 100%;
+        margin: 12px 0 4px;
+        accent-color: var(--accent-2);
+        min-height: 28px;
+      }
+
+      .cw-readout {
+        display: block;
+        min-height: 2.8em;
+        font-family: ui-sans-serif, system-ui, sans-serif;
+        font-weight: 700;
+        color: var(--ink);
+        background: var(--soft);
+        border-radius: 6px;
+        padding: 8px 10px;
+      }
+
+      @media print {
+        .camelot-path {
+          display: none;
+        }
+      }
     </style>
   </head>
   <body>
@@ -81,6 +116,17 @@
         114 und 126&nbsp;BPM &mdash; mit genau einer kurzen Spitze auf 140. Die
         Tonarten kreisen eng um die Camelot-Felder 12 / 1 und 3.
       </div>
+
+      <figure class="camelot-path" data-set="solomun">
+        <figcaption class="small" style="margin-bottom: 6px;">
+          Der Weg durchs Camelot-Wheel: Schiebe durch die Tracks. Der aktuelle
+          Track ist gruen markiert, die Spur zieht nach und verblasst Schritt um
+          Schritt. Tracks ohne belegte Tonart erscheinen nicht auf dem Rad.
+        </figcaption>
+        <div class="cw"></div>
+        <input type="range" class="cw-slider" min="1" max="23" value="1" aria-label="Solomun-Set: Track auswaehlen">
+        <output class="cw-readout" aria-live="polite"></output>
+      </figure>
 
       <div class="grid">
         <section class="panel phase">
@@ -202,6 +248,17 @@
         &mdash; bevor der letzte Track noch einmal auf 134 anzieht.
       </div>
 
+      <figure class="camelot-path" data-set="yousuke">
+        <figcaption class="small" style="margin-bottom: 6px;">
+          Der Weg durchs Camelot-Wheel: Schiebe durch die Tracks. Der aktuelle
+          Track ist gruen markiert, die Spur zieht nach und verblasst Schritt um
+          Schritt. Tracks ohne belegte Tonart erscheinen nicht auf dem Rad.
+        </figcaption>
+        <div class="cw"></div>
+        <input type="range" class="cw-slider" min="1" max="16" value="1" aria-label="Yousuke-Set: Track auswaehlen">
+        <output class="cw-readout" aria-live="polite"></output>
+      </figure>
+
       <div class="grid">
         <section class="panel phase">
           <h3>1. Hochfrequenter Einstieg (Tracks 1&ndash;3)</h3>
@@ -273,11 +330,11 @@
             <tr><td class="num">3</td><td>Skrillex &amp; Nai Barghouti &ndash; XENA (Mixed)</td><td class="num">145</td><td class="num">3B</td><td>mittel</td></tr>
             <tr><td class="num">4</td><td>Underworld &ndash; Moaner</td><td class="num">140</td><td class="num">3A</td><td>mittel</td></tr>
             <tr><td class="num">5</td><td>The Prodigy &ndash; Firestarter (Empirion Mix)</td><td class="num">140</td><td class="num">3A</td><td>mittel</td></tr>
-            <tr><td class="num">6</td><td>El Gordo &ndash; Kuliki</td><td class="num muted-cell">&mdash;</td><td class="num muted-cell">&mdash;</td><td class="muted-cell">&mdash;</td></tr>
+            <tr><td class="num">6</td><td>El Gordo &ndash; Kuliki</td><td class="num">143</td><td class="num">1B</td><td>mittel</td></tr>
             <tr><td class="num">7</td><td>Romy &amp; Fred again.. &ndash; Strong</td><td class="num">134</td><td class="num">12B</td><td>mittel</td></tr>
             <tr><td class="num">8</td><td>3Phaz &ndash; Drum Track</td><td class="num">130</td><td class="num">9B</td><td>hoch</td></tr>
             <tr><td class="num">9</td><td>For Those I Love &ndash; I Have a Love (Overmono Remix)</td><td class="num">129</td><td class="num">4A</td><td>mittel</td></tr>
-            <tr><td class="num">10</td><td>The Chemical Brothers &ndash; The Darkness That You Fear</td><td class="num muted-cell">&mdash;</td><td class="num muted-cell">&mdash;</td><td class="muted-cell">&mdash;</td></tr>
+            <tr><td class="num">10</td><td>The Chemical Brothers &ndash; The Darkness That You Fear</td><td class="num">128</td><td class="num">11B</td><td class="muted-cell">niedrig</td></tr>
             <tr><td class="num">11</td><td>The Chemical Brothers &ndash; Free Yourself</td><td class="num">125</td><td class="num">11A</td><td>mittel</td></tr>
             <tr><td class="num">12</td><td>Jamie xx &ndash; The Rest Is Noise</td><td class="num">125</td><td class="num">5A</td><td>mittel</td></tr>
             <tr><td class="num">13</td><td>SOPHIE &ndash; Whole New World/Pretend World</td><td class="num">125</td><td class="num">3B</td><td>mittel</td></tr>
@@ -328,5 +385,168 @@
         <a href="https://www.billboard.com/music/music-news/yousuke-yukimatsu-interview-dj-billboard-japan-feature-1236227207/">Billboard-Interview mit Yousuke Yukimatsu</a>.
       </p>
     </main>
+
+    <script>
+      (function () {
+        const SETS = {
+          solomun: [
+            { l: "International Pony - Our House", bpm: 128, c: "12B" },
+            { l: "Liu Bei - Atlas World", bpm: 122, c: "1A" },
+            { l: "Night Talk - Gamma", bpm: 121, c: "3B" },
+            { l: "Fur Coat - Monday", bpm: 123, c: "10A" },
+            { l: "FreakMe & Stan Ritch - Metronome", bpm: 123, c: "11A" },
+            { l: "Kollektiv Turmstrasse - Sorry I Am Late", bpm: 122, c: "2B" },
+            { l: "SBTRKT - New Dorp. New York", bpm: 119, c: "8B" },
+            { l: "Thomas Bangalter - Club Soda", bpm: 140, c: "3B" },
+            { l: "Khan - Say Goodbye", bpm: 116, c: "7B" },
+            { l: "Alix Alvarez - Fayall", bpm: 125, c: "8B" },
+            { l: "Veerus & Maxie Devine - My Train", bpm: 123, c: "7B" },
+            { l: "Matthias Meyer - Tout Va Bien", bpm: 126, c: "4A" },
+            { l: "Jairo Catelo - Timeless", bpm: 120, c: "12A" },
+            { l: "SevenDoors - Movement of Whale", bpm: 122, c: "1A" },
+            { l: "Jozif - Lady B's Lullaby", bpm: 120, c: "12B" },
+            { l: "Simion - Lost", bpm: 118, c: "12A" },
+            { l: "Solomun - Something We All Adore", bpm: 120, c: "1B" },
+            { l: "The Phenomenal Handclap Band - Baby", bpm: 114, c: "1B" },
+            { l: "Zola Jesus - Hikikomori", bpm: null, c: null },
+            { l: "The Martian - Tobacco Ties", bpm: 133, c: "3B" },
+            { l: "WestBam & Nena - Oldschool Baby", bpm: 130, c: "3A" },
+            { l: "Mousse T. - Horny", bpm: 124, c: "1A" },
+            { l: "Louie Austen - Hoping", bpm: 124, c: "9A" }
+          ],
+          yousuke: [
+            { l: "100 gecs - Dumbest Girl Alive", bpm: 150, c: "8A" },
+            { l: "Tzusing - Residual Stress", bpm: 145, c: "1A" },
+            { l: "Skrillex & Nai Barghouti - XENA", bpm: 145, c: "3B" },
+            { l: "Underworld - Moaner", bpm: 140, c: "3A" },
+            { l: "The Prodigy - Firestarter", bpm: 140, c: "3A" },
+            { l: "El Gordo - Kuliki", bpm: 143, c: "1B" },
+            { l: "Romy & Fred again.. - Strong", bpm: 134, c: "12B" },
+            { l: "3Phaz - Drum Track", bpm: 130, c: "9B" },
+            { l: "For Those I Love - I Have a Love", bpm: 129, c: "4A" },
+            { l: "The Chemical Brothers - The Darkness That You Fear", bpm: 128, c: "11B" },
+            { l: "The Chemical Brothers - Free Yourself", bpm: 125, c: "11A" },
+            { l: "Jamie xx - The Rest Is Noise", bpm: 125, c: "5A" },
+            { l: "SOPHIE - Whole New World/Pretend World", bpm: 125, c: "3B" },
+            { l: "Skrillex - With You, Friends", bpm: 120, c: "10B" },
+            { l: "Karla Borecky - The Passing of Clouds", bpm: null, c: null },
+            { l: "Lorenzo Senni - THINK BIG", bpm: 134, c: "6B" }
+          ]
+        };
+
+        const NS = "http://www.w3.org/2000/svg";
+        const CX = 260, CY = 260, R_A = 212, R_B = 150, NODE = 17, WINDOW = 6;
+
+        function angleFor(num) {
+          return (-90 + num * 30) * Math.PI / 180;
+        }
+
+        function coord(camelot) {
+          if (!camelot) return null;
+          const num = parseInt(camelot, 10);
+          const letter = camelot.slice(-1);
+          const r = letter === "A" ? R_A : R_B;
+          const a = angleFor(num);
+          return { x: CX + r * Math.cos(a), y: CY + r * Math.sin(a) };
+        }
+
+        function svgEl(name, attrs) {
+          const e = document.createElementNS(NS, name);
+          for (const k in attrs) e.setAttribute(k, attrs[k]);
+          return e;
+        }
+
+        function fade(age) {
+          return Math.max(0, 1 - age / WINDOW);
+        }
+
+        function build(fig) {
+          const tracks = SETS[fig.dataset.set];
+          const holder = fig.querySelector(".cw");
+          const slider = fig.querySelector(".cw-slider");
+          const readout = fig.querySelector(".cw-readout");
+
+          const svg = svgEl("svg", { viewBox: "0 0 520 520", role: "img" });
+          svg.setAttribute("aria-label", "Camelot-Pfad durch das Set");
+
+          svg.appendChild(svgEl("circle", { cx: CX, cy: CY, r: R_A, fill: "none", stroke: "#ded8cc", "stroke-width": 1.5 }));
+          svg.appendChild(svgEl("circle", { cx: CX, cy: CY, r: R_B, fill: "none", stroke: "#ded8cc", "stroke-width": 1.5 }));
+
+          for (let n = 1; n <= 12; n++) {
+            ["A", "B"].forEach(function (letter) {
+              const code = n + letter;
+              const pt = coord(code);
+              svg.appendChild(svgEl("circle", { cx: pt.x, cy: pt.y, r: NODE, fill: "#fbfaf7", stroke: "#e3ddd0", "stroke-width": 1.4 }));
+              const t = svgEl("text", { x: pt.x, y: pt.y, "text-anchor": "middle", "dominant-baseline": "central", fill: "#9a958b", "font-size": 12, "font-weight": 600, "font-family": "ui-sans-serif, system-ui, sans-serif" });
+              t.textContent = code;
+              svg.appendChild(t);
+            });
+          }
+
+          const trailLayer = svgEl("g", {});
+          const dotLayer = svgEl("g", {});
+          svg.appendChild(trailLayer);
+          svg.appendChild(dotLayer);
+          holder.appendChild(svg);
+
+          slider.min = 1;
+          slider.max = tracks.length;
+
+          function render() {
+            const cur = parseInt(slider.value, 10);
+            while (trailLayer.firstChild) trailLayer.removeChild(trailLayer.firstChild);
+            while (dotLayer.firstChild) dotLayer.removeChild(dotLayer.firstChild);
+
+            let prev = null, prevIdx = null;
+            for (let i = 1; i <= cur; i++) {
+              const pt = coord(tracks[i - 1].c);
+              if (!pt) continue;
+              if (prev) {
+                const age = cur - i;
+                const op = fade(age);
+                if (op > 0) {
+                  const gap = (i - prevIdx) > 1;
+                  const line = svgEl("line", { x1: prev.x, y1: prev.y, x2: pt.x, y2: pt.y, stroke: "#2f7bbd", "stroke-width": gap ? 2 : 3, "stroke-linecap": "round", "stroke-opacity": op });
+                  if (gap) line.setAttribute("stroke-dasharray", "4 7");
+                  trailLayer.appendChild(line);
+                }
+              }
+              prev = pt;
+              prevIdx = i;
+            }
+
+            for (let i = 1; i <= cur; i++) {
+              const pt = coord(tracks[i - 1].c);
+              if (!pt) continue;
+              const isCur = i === cur;
+              const op = fade(cur - i);
+              if (!isCur && op <= 0) continue;
+              dotLayer.appendChild(svgEl("circle", {
+                cx: pt.x, cy: pt.y, r: isCur ? 13 : 8,
+                fill: isCur ? "#1f8a5b" : "#2f7bbd",
+                "fill-opacity": isCur ? 1 : op * 0.85,
+                stroke: isCur ? "#0f5f3c" : "none",
+                "stroke-width": isCur ? 2.5 : 0
+              }));
+              if (isCur) {
+                const t = svgEl("text", { x: pt.x, y: pt.y, "text-anchor": "middle", "dominant-baseline": "central", fill: "#fff", "font-size": 12, "font-weight": 700, "font-family": "ui-sans-serif, system-ui, sans-serif" });
+                t.textContent = i;
+                dotLayer.appendChild(t);
+              }
+            }
+
+            const tr = tracks[cur - 1];
+            const bpm = tr.bpm != null ? tr.bpm + " BPM" : "BPM unbekannt";
+            const cam = tr.c != null ? tr.c : "Camelot unbekannt";
+            readout.textContent = "#" + cur + "  ·  " + tr.l + "  ·  " + bpm + "  ·  " + cam;
+          }
+
+          slider.addEventListener("input", render);
+          render();
+        }
+
+        document.querySelectorAll(".camelot-path").forEach(build);
+      })();
+    </script>
   </body>
 </html>

@@ -125,11 +125,11 @@
         "beatport": null
       },
       "audio": {
-        "bpm": null,
-        "key": null,
-        "camelot": null,
-        "confidence": "unknown",
-        "source_note": "No reliable public BPM/key data found for the Set79 identification."
+        "bpm": 143,
+        "key": "B major",
+        "camelot": "1B",
+        "confidence": "medium",
+        "source_note": "SongBPM snippet reports 143 BPM / B major (Camelot 1B)."
       }
     },
     {
@@ -202,11 +202,11 @@
         "beatport": "https://www.beatport.com/track/the-darkness-that-you-fear/27271563/"
       },
       "audio": {
-        "bpm": null,
-        "key": null,
-        "camelot": null,
-        "confidence": "unknown",
-        "source_note": "Set79 title and Spotify ID appear to point to a remix/listing where public snippets were inconclusive."
+        "bpm": 128,
+        "key": "A major",
+        "camelot": "11B",
+        "confidence": "low",
+        "source_note": "SongData.io/Tunebat for the canonical Original Mix report 128 BPM / A major (11B); the Set79 Spotify ID may point to a different version/remix."
       }
     },
     {
