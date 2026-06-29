@@ -16,7 +16,7 @@
     ],
     "notes": [
       "Track order follows the setlist.fm source provided by the user.",
-      "BPM/key/Camelot data is enrichment from public track-analysis snippets and DJ databases, not Spotify Audio Features.",
+      "BPM/key/Camelot are primarily from Spotify's in-app Mix view (per user screenshots); a few tracks not available on Spotify keep third-party estimates, flagged per track in source_note.",
       "Where the live-set analysis and canonical release analysis conflict, canonical release data is preferred and conflicts are noted.",
       "Start timestamps added from the YouTube pinned-comment tracklist (minute resolution)."
     ]
@@ -35,7 +35,7 @@
         "key": "E major",
         "camelot": "12B",
         "confidence": "low",
-        "source_note": "Setlist title conflicts with other tracklist sources that identify the opener as International Pony - Solid Gold (Solomun Intro)."
+        "source_note": "Not confirmed on Spotify (Solomun Intro edit); BPM/key are third-party estimates. Opener identity also disputed across tracklists."
       }
     },
     {
@@ -141,7 +141,7 @@
         "key": "C# major",
         "camelot": "3B",
         "confidence": "medium",
-        "source_note": "Public Tunebat snippet; remastered/live-set analyses differ."
+        "source_note": "Not confirmed on Spotify; BPM/key are third-party estimates (Tunebat)."
       }
     },
     {
@@ -231,7 +231,7 @@
         "key": "G# minor",
         "camelot": "1A",
         "confidence": "medium",
-        "source_note": "Public Tunebat snippet."
+        "source_note": "Spotify Mix shows Camelot 1A (user screenshot); BPM 122 is a Tunebat estimate, not legible in the screenshot."
       }
     },
     {
@@ -306,7 +306,7 @@
         "key": null,
         "camelot": null,
         "confidence": "unknown",
-        "source_note": "No reliable public BPM/key data found; supplemental live-set analysis reports 122 BPM but does not expose enough canonical release context."
+        "source_note": "Not on Spotify: the Oskar Offermann remix is unavailable; no reliable BPM/key."
       }
     },
     {
@@ -321,7 +321,7 @@
         "key": "C# major",
         "camelot": "3B",
         "confidence": "high",
-        "source_note": "Public Tunebat/Songstats snippet."
+        "source_note": "Not confirmed on Spotify; BPM/key are third-party estimates (Tunebat/Songstats)."
       }
     },
     {

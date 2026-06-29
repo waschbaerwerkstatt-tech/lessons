@@ -11,7 +11,7 @@
     ],
     "notes": [
       "Track order, timestamps, Spotify links, YouTube links and Beatport links follow the Set79 source provided by the user.",
-      "BPM/key/Camelot data is enrichment from public track-analysis snippets and DJ databases, not Spotify Audio Features.",
+      "BPM/key/Camelot are primarily from Spotify's in-app Mix view (per user screenshots); a few tracks not available on Spotify keep third-party estimates, flagged per track in source_note.",
       "Some names are preserved from Set79 even where public sources suggest a more specific Spotify title or remix."
     ]
   },
@@ -129,7 +129,7 @@
         "key": "B major",
         "camelot": "1B",
         "confidence": "medium",
-        "source_note": "SongBPM snippet reports 143 BPM / B major (Camelot 1B)."
+        "source_note": "Not on Spotify (Set79 lists no link); BPM/key are a SongBPM estimate (143 BPM / B major / 1B)."
       }
     },
     {
