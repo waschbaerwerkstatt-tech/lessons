@@ -6,6 +6,12 @@
     <title>Spotify Mix Entscheidungskarte</title>
     <link rel="stylesheet" href="../assets/course.css">
     <style>
+      /* Ein Farbcode fuer die ganze Seite:
+         gruen  = passend / sicher
+         blau   = kompatibel (sichere Tonart-Bewegung)
+         orange = mutig / spannend
+         slate  = strukturell, keine Wertung */
+
       .flow {
         display: flex;
         flex-wrap: wrap;
@@ -22,18 +28,29 @@
         font-size: 0.92rem;
       }
 
-      .flow .chip.a {
-        background: #e4f0ea;
-        color: #1c7a51;
-      }
-
-      .flow .chip.b {
-        background: #ececf8;
-        color: #5350b4;
-      }
+      .chip.safe,
+      .kpill.safe { background: #e4f0ea; color: #1c7a51; }
+      .chip.bold,
+      .kpill.bold { background: #f6ead9; color: #9a5b10; }
+      .kpill.fresh { background: #e6eff7; color: #2f7bbd; }
 
       .flow .arrow {
         color: var(--muted);
+      }
+
+      .legend {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        align-items: center;
+        margin: 16px 0 0;
+        font-family: ui-sans-serif, system-ui, sans-serif;
+        font-size: 0.82rem;
+        color: var(--muted);
+      }
+
+      .legend .kpill {
+        cursor: default;
       }
 
       .cards {
@@ -45,10 +62,18 @@
 
       .axis {
         border: 1px solid var(--line);
-        border-top: 4px solid var(--c);
+        border-top: 4px solid #4b515a;
         border-radius: 10px;
         background: #fff;
         padding: 16px 16px 15px;
+      }
+
+      .axis .tagline {
+        color: #6b7280;
+      }
+
+      .axis .start b {
+        color: #2d3138;
       }
 
       .tagline {
@@ -78,10 +103,6 @@
         font-size: 1rem;
       }
 
-      .axis .start b {
-        color: var(--c);
-      }
-
       .hint {
         display: inline-block;
         font-family: ui-sans-serif, system-ui, sans-serif;
@@ -98,6 +119,10 @@
         border-radius: 8px;
         background: var(--bg);
         padding: 16px;
+      }
+
+      .mode .tagline {
+        color: var(--c);
       }
 
       .mode p {
@@ -122,11 +147,6 @@
         white-space: nowrap;
       }
 
-      .kpill.same { background: #e2f0e9; color: #1c7a51; }
-      .kpill.near { background: #e6eff7; color: #2f7bbd; }
-      .kpill.rel  { background: #eee9f7; color: #6a4fb0; }
-      .kpill.opp  { background: #f6ead9; color: #9a5b10; }
-
       .arrow {
         color: var(--muted);
         margin: 0 5px;
@@ -139,10 +159,9 @@
         font-weight: 700;
       }
 
-      .eff.same { color: #1c7a51; }
-      .eff.near { color: #2f7bbd; }
-      .eff.rel  { color: #6a4fb0; }
-      .eff.opp  { color: #9a5b10; }
+      .eff.safe  { color: #1c7a51; }
+      .eff.fresh { color: #2f7bbd; }
+      .eff.bold  { color: #9a5b10; }
     </style>
   </head>
   <body>
@@ -155,36 +174,42 @@
           Eine schnelle Karte fuer Spotify-Mix-Uebergaenge.
         </p>
         <div class="flow">
-          <span class="chip a">erst passend</span>
+          <span class="chip safe">erst passend</span>
           <span class="arrow">&rarr;</span>
-          <span class="chip b">dann spannend</span>
+          <span class="chip bold">dann spannend</span>
+        </div>
+        <div class="legend">
+          Farbcode:
+          <span class="kpill safe">passend / sicher</span>
+          <span class="kpill fresh">kompatibel</span>
+          <span class="kpill bold">mutig / spannend</span>
         </div>
       </header>
 
       <h2>Die vier Achsen</h2>
       <div class="cards">
-        <article class="axis" style="--c: #1f8a5b;">
+        <article class="axis">
           <div class="tagline">Achse 1</div>
           <h3>Tempo</h3>
           <p class="q">Laufen die Pulse nah genug beieinander?</p>
           <p class="start"><b>Guter Start:</b> 0&ndash;5&nbsp;BPM Differenz fuer lange Blends.</p>
           <span class="hint">Spotify: BPM neben jedem Song</span>
         </article>
-        <article class="axis" style="--c: #2f7bbd;">
+        <article class="axis">
           <div class="tagline">Achse 2</div>
           <h3>Tonart</h3>
           <p class="q">Reiben sich Bass, Akkorde oder Stimme?</p>
           <p class="start"><b>Guter Start:</b> gleiche Zahl, gleicher Buchstabe oder plus/minus eins.</p>
           <span class="hint">Spotify: Camelot-Key, z.&nbsp;B. 3B / 3A</span>
         </article>
-        <article class="axis" style="--c: #6a4fb0;">
+        <article class="axis">
           <div class="tagline">Achse 3</div>
           <h3>Phrase</h3>
           <p class="q">Passiert der Wechsel an einer musikalischen Kante?</p>
           <p class="start"><b>Guter Start:</b> 2&ndash;4 Takte fuer Pop, 4&ndash;8 fuer Dance.</p>
           <span class="hint">Spotify: Takte und Waveform</span>
         </article>
-        <article class="axis" style="--c: #9a5b10;">
+        <article class="axis">
           <div class="tagline">Achse 4</div>
           <h3>Bass</h3>
           <p class="q">Kaempfen zwei Kicks oder Basslines gleichzeitig?</p>
@@ -196,21 +221,21 @@
       <h2>Drei Modi</h2>
       <div class="cards">
         <article class="mode" style="--c: #1f8a5b; --bg: #f1f7f3;">
-          <div class="tagline">Unsichtbar</div>
+          <div class="tagline">Passend</div>
           <h3>Elegant</h3>
           <p>Tempo nah, Tonart kompatibel, laengerer Blend, Bass sauber
           uebergeben. Ziel: Der Hoerer merkt erst spaet, dass ein neuer Song
           laeuft.</p>
         </article>
-        <article class="mode" style="--c: #2f7bbd; --bg: #eff4fa;">
-          <div class="tagline">Mutig</div>
+        <article class="mode" style="--c: #9a5b10; --bg: #f8f1e8;">
+          <div class="tagline">Spannend</div>
           <h3>Ueberraschend</h3>
           <p>Ein Parameter darf springen, aber ein anderer muss verbinden:
           gleicher Groove, aehnliche Stimme, aehnlicher Raumklang oder exakt
           gesetzter Downbeat.</p>
         </article>
-        <article class="mode" style="--c: #9a5b10; --bg: #f8f1e8;">
-          <div class="tagline">Rettung</div>
+        <article class="mode" style="--c: #5a6068; --bg: #f2f1ef;">
+          <div class="tagline">Notfall</div>
           <h3>Notbremse</h3>
           <p>Wenn Tempo oder Tonart stark clashen: kuerzerer Uebergang,
           staerkerer Filter, Cut auf Phrase oder Ausblende statt langem
@@ -219,6 +244,40 @@
       </div>
 
       <h2>Camelot-Wheel: sicher vs. spannend</h2>
+      <p>
+        Das Camelot-Wheel ist eine DJ-freundliche Umbenennung des musikalischen
+        Quintenzirkels. Statt Tonart-Namen wie &bdquo;A-Moll&ldquo; oder
+        &bdquo;C-Dur&ldquo; stehen kurze Codes wie <span class="kpill safe">8A</span>
+        oder <span class="kpill fresh">8B</span> &mdash; leichter zu vergleichen,
+        ohne Musiktheorie im Kopf.
+      </p>
+      <p>
+        Zwoelf Zahlen liegen wie auf einer Uhr im Kreis, in zwei Ringen:
+        <strong>A ist der Moll-Ring, B der Dur-Ring</strong>. Die Zahl sagt die
+        Position, der Buchstabe den Ring. Genau diesen Code zeigt dir Spotify
+        neben jedem Song.
+      </p>
+      <p>
+        Die Navigationsregel: Tonarten, die nah beieinanderliegen, klingen
+        zusammen. <em>Nah</em> heisst drei Dinge &mdash; gleiche Zelle
+        (<span class="kpill safe">3A</span><span class="arrow">&rarr;</span><span class="kpill safe">3A</span>),
+        Nachbarzahl
+        (<span class="kpill fresh">3A</span><span class="arrow">&rarr;</span><span class="kpill fresh">2A</span> /
+        <span class="kpill fresh">4A</span>) oder gleiche Zahl im anderen Ring
+        (<span class="kpill fresh">3A</span><span class="arrow">&rarr;</span><span class="kpill fresh">3B</span>).
+        Das ist kein Zufall: Nachbarzahlen sind Quintschritte und teilen fast
+        alle Toene; gleiche Zahl in A und B ist die Dur-/Moll-Parallele mit
+        identischem Tonmaterial. Je weiter du springst, desto weniger gemeinsame
+        Toene &mdash; bis zum Gegenueber
+        (<span class="kpill bold">3A</span><span class="arrow">&rarr;</span><span class="kpill bold">9A</span>),
+        das maximal reibt.
+      </p>
+      <p>
+        In der Praxis: Fuer einen eleganten Uebergang bleibst du in der Naehe;
+        fuer eine bewusste Ueberraschung springst du weiter und faengst den Bruch
+        dann mit Tempo, Phrase oder Filter ab. Das Beispiel im Rad startet bei
+        <span class="kpill safe">3A</span>.
+      </p>
       <figure>
         <img class="diagram" src="../assets/camelot-wheel.svg" alt="Camelot-Wheel mit sicheren Nachbarn und Curveball-Bewegung ausgehend von 3A">
         <figcaption>
@@ -239,26 +298,26 @@
         <tbody>
           <tr>
             <td>Gleicher Key</td>
-            <td><span class="kpill same">3A</span><span class="arrow">&rarr;</span><span class="kpill same">3A</span></td>
-            <td><span class="eff same">Sehr stabil</span></td>
+            <td><span class="kpill safe">3A</span><span class="arrow">&rarr;</span><span class="kpill safe">3A</span></td>
+            <td><span class="eff safe">Sehr stabil</span></td>
             <td>Langer Blend ist meist moeglich</td>
           </tr>
           <tr>
             <td>Nachbar links/rechts</td>
-            <td><span class="kpill near">3A</span><span class="arrow">&rarr;</span><span class="kpill near">2A</span> / <span class="kpill near">4A</span></td>
-            <td><span class="eff near">Harmonisch frisch</span></td>
+            <td><span class="kpill fresh">3A</span><span class="arrow">&rarr;</span><span class="kpill fresh">2A</span> / <span class="kpill fresh">4A</span></td>
+            <td><span class="eff fresh">Harmonisch frisch</span></td>
             <td>Guter Standard fuer elegante Sets</td>
           </tr>
           <tr>
             <td>Innen/aussen</td>
-            <td><span class="kpill rel">3A</span><span class="arrow">&rarr;</span><span class="kpill rel">3B</span></td>
-            <td><span class="eff rel">Verwandt, neue Farbe</span></td>
+            <td><span class="kpill fresh">3A</span><span class="arrow">&rarr;</span><span class="kpill fresh">3B</span></td>
+            <td><span class="eff fresh">Verwandt, neue Farbe</span></td>
             <td>Gut fuer subtile Stimmungswechsel</td>
           </tr>
           <tr>
             <td>Gegenueber</td>
-            <td><span class="kpill opp">3A</span><span class="arrow">&rarr;</span><span class="kpill opp">9A</span></td>
-            <td><span class="eff opp">Stark spannungsreich</span></td>
+            <td><span class="kpill bold">3A</span><span class="arrow">&rarr;</span><span class="kpill bold">9A</span></td>
+            <td><span class="eff bold">Stark spannungsreich</span></td>
             <td>Nur als kurzer, bewusster Curveball</td>
           </tr>
         </tbody>
