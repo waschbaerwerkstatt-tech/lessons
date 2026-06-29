@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lessons</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --ink: #202124;
+        --muted: #60646f;
+        --paper: #fbfaf7;
+        --line: #ded8cc;
+        --accent: #1f8a5b;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background: var(--paper);
+        color: var(--ink);
+        font-family: ui-serif, Georgia, "Times New Roman", serif;
+        line-height: 1.58;
+      }
+
+      main {
+        max-width: 860px;
+        margin: 0 auto;
+        padding: 54px 22px 84px;
+      }
+
+      h1 {
+        margin: 0 0 12px;
+        font-size: clamp(2.4rem, 7vw, 5rem);
+        line-height: 1.05;
+      }
+
+      .lede {
+        max-width: 58ch;
+        color: var(--muted);
+        font-size: 1.2rem;
+      }
+
+      .course {
+        border-top: 1px solid var(--line);
+        margin-top: 38px;
+        padding-top: 24px;
+      }
+
+      h2 {
+        margin: 0 0 8px;
+        font-size: 1.55rem;
+      }
+
+      ul {
+        padding-left: 1.1rem;
+      }
+
+      li {
+        margin: 8px 0;
+        font-size: 1.05rem;
+      }
+
+      a {
+        color: #155c96;
+        text-decoration-thickness: 0.08em;
+        text-underline-offset: 0.16em;
+      }
+
+      .meta {
+        color: var(--accent);
+        font-family: ui-sans-serif, system-ui, sans-serif;
+        font-size: 0.82rem;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <p class="meta">Public Learning Workspace</p>
+      <h1>Lessons</h1>
+      <p class="lede">
+        Oeffentliche, lokal gepflegte Lernressourcen. Jede Aenderung auf
+        <code>main</code> wird ueber GitHub Pages veroeffentlicht.
+      </p>
+
+      <section class="course">
+        <h2>Spotify Mixing</h2>
+        <p>
+          Kurze Lektionen und Referenzen zu Spotifys Mix-Feature, mit Fokus auf
+          elegante und ueberraschende Uebergaenge.
+        </p>
+        <ul>
+          <li><a href="spotify-mixing/lessons/0001-spotify-mix-grundmodell.html">Lektion 0001: Spotify Mix Grundmodell</a></li>
+          <li><a href="spotify-mixing/reference/0001-spotify-mix-entscheidungskarte.html">Referenz: Spotify Mix Entscheidungskarte</a></li>
+          <li><a href="spotify-mixing/RESOURCES.md">Quellen</a></li>
+          <li><a href="spotify-mixing/MISSION.md">Mission</a></li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>

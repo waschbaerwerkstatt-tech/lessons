@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lektion 0001: Spotify Mix Grundmodell</title>
+    <link rel="stylesheet" href="../assets/course.css">
+  </head>
+  <body>
+    <main>
+      <header>
+        <div class="eyebrow">Lektion 0001</div>
+        <h1>Erst passend, dann spannend</h1>
+        <p class="lede">
+          Du lernst, den Spotify-Mix-Screen als Entscheidungssystem zu lesen:
+          Tempo, Tonart, Phrase und Bass. Danach kannst du den Screenshot schon
+          sinnvoll beurteilen.
+        </p>
+      </header>
+
+      <img class="screenshot" src="../assets/spotify-mix-screenshot.jpg" alt="Spotify Mix Screenshot mit zwei Waveforms, 120 und 122 BPM, Camelot 3B und 3A, 2 Takte Uebergang">
+
+      <section class="callout">
+        <h2>Das Grundmodell</h2>
+        <p>
+          Spotify sagt selbst: Beim Mixen helfen <span class="term">BPM</span>,
+          <span class="term">Camelot-Key</span>, <span class="term">Waveform</span>
+          und <span class="term">Beatdaten</span>; man kann Auto nutzen oder
+          Lautstaerke, EQ und Effekte selbst formen.
+          <a href="https://newsroom.spotify.com/2025-08-19/mix-your-favorite-playlists-seamlessly-by-adding-your-own-transitions/">Quelle: Spotify Newsroom</a>.
+        </p>
+        <p>
+          Fuer dich heisst das: Ein Uebergang klingt elegant, wenn genug Dinge
+          verbunden sind. Er klingt ueberraschend, wenn ein Ding bricht, aber
+          mindestens ein anderes Ding die Bruecke baut.
+        </p>
+      </section>
+
+      <h2>Dein Screenshot in vier Lesarten</h2>
+      <div class="grid">
+        <section class="panel">
+          <h3>Tempo</h3>
+          <p>
+            <span class="pill">120 BPM</span> zu <span class="pill">122 BPM</span>
+            ist nah. Das ist gut fuer einen Blend, weil der Puls nicht sofort
+            auseinanderfaellt.
+          </p>
+        </section>
+        <section class="panel">
+          <h3>Tonart</h3>
+          <p>
+            <span class="pill">3B</span> zu <span class="pill">3A</span> ist
+            gleiche Zahl, anderer Letter. Auf dem Camelot-System ist das eine
+            sichere, subtile Major/Minor-Beziehung.
+            <a href="https://mixedinkey.com/harmonic-mixing-guide/">Quelle: Mixed In Key</a>.
+          </p>
+        </section>
+        <section class="panel">
+          <h3>Phrase</h3>
+          <p>
+            <span class="pill">2 Takte</span> ist kurz. Das kann elegant sein,
+            wenn wenig melodisches Material ueberlappt, wirkt aber weniger wie
+            ein langer DJ-Blend.
+          </p>
+        </section>
+        <section class="panel">
+          <h3>Bass</h3>
+          <p>
+            Die gelbe EQ-Kurve zeigt einen Basswechsel in der Mitte. Das ist
+            wichtig, weil zwei Basslines gleichzeitig schnell matschig werden.
+            <a href="https://www.digitaldjtips.com/rock-the-dancefloor/five-basic-dj-transitions/">Quelle: Digital DJ Tips</a>.
+          </p>
+        </section>
+      </div>
+
+      <section class="exercise" id="trainer">
+        <h2>Mini-Trainer: Welche Bruecke traegt?</h2>
+        <p>
+          Waehle fuer jeden Fall die staerkste Bruecke. Danach bekommst du
+          sofort Feedback. Es geht nicht um richtig auswendig, sondern um
+          Hoerentscheidungen.
+        </p>
+
+        <div class="meter">
+          <h3>Fall A: 120 BPM / 122 BPM, 3B / 3A, 2 Takte</h3>
+          <div class="choice-row">
+            <button data-answer="a" data-good="true">Tempo + Key</button>
+            <button data-answer="a">Bass + Cut</button>
+            <button data-answer="a">Filter + FX</button>
+          </div>
+          <output id="feedback-a"></output>
+        </div>
+
+        <div class="meter">
+          <h3>Fall B: Techno in Indie, 128 BPM / 104 BPM, Tonart unklar</h3>
+          <div class="choice-row">
+            <button data-answer="b">Langer Blend</button>
+            <button data-answer="b" data-good="true">Phrase + Cut</button>
+            <button data-answer="b">Bass + Mix</button>
+          </div>
+          <output id="feedback-b"></output>
+        </div>
+
+        <div class="meter">
+          <h3>Fall C: Gleiches Tempo, aber Vocals und Akkorde reiben</h3>
+          <div class="choice-row">
+            <button data-answer="c">Mehr Lautheit</button>
+            <button data-answer="c">Mehr Overlap</button>
+            <button data-answer="c" data-good="true">Weniger Melodie</button>
+          </div>
+          <output id="feedback-c"></output>
+        </div>
+      </section>
+
+      <h2>Spotify-Regel fuer diese Woche</h2>
+      <p>
+        Wenn du einen Uebergang ausprobierst, veraendere erst nur einen Hebel:
+        <span class="term">Taktlaenge</span>, <span class="term">Basswechsel</span>
+        oder <span class="term">Filter</span>. Hoere dann A/B: Wurde der Wechsel
+        unsichtbarer, klarer oder interessanter?
+      </p>
+      <p>
+        Fuer die naechste Wiederholung liegt die Kurzreferenz hier:
+        <a href="../reference/0001-spotify-mix-entscheidungskarte.html">Mix-Entscheidungskarte</a>.
+      </p>
+      <p class="small">
+        Primaere Quelle zum Lesen:
+        <a href="https://newsroom.spotify.com/2025-08-19/mix-your-favorite-playlists-seamlessly-by-adding-your-own-transitions/">Spotify Newsroom: Mix Your Favorite Playlists Seamlessly</a>.
+        Wenn dir eine Option aus Spotify unklar bleibt, frag mich direkt mit
+        Screenshot oder Trackpaar.
+      </p>
+    </main>
+
+    <script>
+      const feedback = {
+        a: {
+          good: "Ja. Tempo und Key tragen hier schon stark; die 2 Takte machen den Wechsel kompakt.",
+          bad: "Fast, aber hier ist die staerkste Bruecke die Naehe von Tempo und Tonart."
+        },
+        b: {
+          good: "Ja. Bei grossem Tempo- und Genrebruch ist ein sauberer Phrasen-Cut oft musikalischer als ein langer Blend.",
+          bad: "Hier wuerde ein langer Blend wahrscheinlich den Bruch vergroessern. Setze lieber auf Phrase und Cut."
+        },
+        c: {
+          good: "Ja. Wenn Harmonie reibt, reduzierst du melodische Ueberlappung: kuerzer, gefilterter oder instrumental.",
+          bad: "Wenn Vocals/Akkorde clashen, hilft mehr Ueberlappung selten. Nimm melodische Information heraus."
+        }
+      };
+
+      document.querySelectorAll("button[data-answer]").forEach((button) => {
+        button.addEventListener("click", () => {
+          const group = button.dataset.answer;
+          const target = document.getElementById(`feedback-${group}`);
+          const result = button.dataset.good ? feedback[group].good : feedback[group].bad;
+          target.textContent = result;
+        });
+      });
+    </script>
+  </body>
+</html>
