@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lektion 0002: Beispiel-Sets lesen</title>
+    <link rel="stylesheet" href="../assets/course.css">
+    <style>
+      .arc {
+        font-family: ui-sans-serif, system-ui, sans-serif;
+        font-size: 0.95rem;
+        background: var(--soft);
+        border-radius: 6px;
+        padding: 12px 14px;
+        margin: 14px 0;
+      }
+
+      td.num {
+        font-variant-numeric: tabular-nums;
+        white-space: nowrap;
+      }
+
+      .muted-cell {
+        color: var(--muted);
+      }
+
+      .phase {
+        border-left: 4px solid var(--accent-2);
+      }
+
+      .phase h3 {
+        font-size: 1.05rem;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <nav class="topnav"><a href="../index.html">&larr; Kursuebersicht</a></nav>
+      <header>
+        <div class="eyebrow">Lektion 0002</div>
+        <h1>Zwei echte Sets lesen</h1>
+        <p class="lede">
+          Zwei beruehmte Boiler-Room-Mixe, durch die Brille des Kurses gelesen:
+          Wo halten die DJs Tempo und Tonart zusammen, und wo brechen sie bewusst
+          etwas auf, um Spannung zu bauen?
+        </p>
+      </header>
+
+      <section class="callout">
+        <h2>Erst lesen: So sind die Daten zu verstehen</h2>
+        <p>
+          Wichtig vorweg: Solomun und Yousuke Yukimatsu haben diese Sets
+          <strong>live nach Gehoer</strong> gemixt, nicht mit einem
+          Camelot-Rechner. Die hier gezeigten <a class="term" href="../reference/0002-glossar.html#bpm">BPM</a>-
+          und <a class="term" href="../reference/0002-glossar.html#camelot-key">Camelot</a>-Werte sind
+          <strong>nachtraegliche Schaetzungen</strong> aus oeffentlichen
+          Track-Datenbanken (Tunebat, Songstats, Beatport &mdash; nicht Spotifys
+          eigene Analyse) mit unterschiedlicher Konfidenz; einige liessen sich
+          gar nicht belegen und stehen als &bdquo;&mdash;&ldquo;.
+        </p>
+        <p>
+          Lies die Zahlen also als Werkzeug, nicht als Partitur: Sie zeigen, wo
+          die Prinzipien aus diesem Kurs sich im echten Set wiederfinden &mdash;
+          und wo gute DJs das Raster bewusst ueberschreiben. Die vollstaendigen
+          Rohdaten liegen als JSON unter
+          <span class="term">spotify-mixing/playlists/</span>.
+        </p>
+      </section>
+
+      <h2>Set 1 &mdash; Solomun, Boiler Room Tulum 2015</h2>
+      <p>
+        Einer der meistgesehenen DJ-Mitschnitte ueberhaupt (ueber 50 Mio. Aufrufe):
+        der Diynamic-Chef im mexikanischen Dschungel, Signatur-Sound aus tiefem,
+        melodischem House. Genau das hoert man auch in den Daten: ein
+        <strong>enges Tempoband</strong> und viele <strong>weiche harmonische
+        Schritte</strong>. Das ist der elegante Pol der Mission.
+      </p>
+
+      <div class="arc">
+        <strong>Der Bogen:</strong> Tempo bleibt fast durchgehend zwischen
+        114 und 126&nbsp;BPM &mdash; mit genau einer kurzen Spitze auf 140. Die
+        Tonarten kreisen eng um die Camelot-Felder 12 / 1 und 3.
+      </div>
+
+      <div class="grid">
+        <section class="panel phase">
+          <h3>1. Sanfter Aufbau (Tracks 1&ndash;6)</h3>
+          <p>
+            Der Intro-Track (<span class="pill">12B</span>, 128&nbsp;BPM) setzt
+            sich schnell auf ein Plateau um 122&nbsp;BPM. Darueber wandern die
+            Tonarten in kleinen Schritten: <span class="pill">10A &rarr; 11A</span>
+            ist ein klassischer
+            <a class="term" href="../reference/0002-glossar.html#adjacent-key">Nachbar-Schritt</a>.
+            <strong>Prinzip:</strong> Das nahe Tempo ist die Konstante, die selbst
+            die mutigeren Tonart-Spruenge traegt.
+          </p>
+        </section>
+        <section class="panel phase">
+          <h3>2. Die Peak-Geste (Tracks 7&ndash;9)</h3>
+          <p>
+            Mitten im 119er-Groove springt Thomas Bangalters &bdquo;Club Soda&ldquo;
+            auf <span class="pill">140&nbsp;BPM</span> &mdash; und gleich wieder
+            herunter auf 116. Das ist kein
+            <a class="term" href="../reference/0002-glossar.html#blend">Blend</a>,
+            sondern eine bewusste Energie-Geste.
+            <strong>Prinzip:</strong> ein Parameter (Tempo) bricht hart, als
+            kurzer Hochpunkt &mdash; danach kehrt der Mix in seine Spur zurueck.
+          </p>
+        </section>
+        <section class="panel phase">
+          <h3>3. Melodischer Mittelteil (Tracks 9&ndash;16)</h3>
+          <p>
+            Tempo pendelt ruhig zwischen 116 und 126, die Keys bewegen sich fast
+            nur ueber Nachbarn und Diagonalen
+            (<span class="pill">7B &rarr; 8B &rarr; 7B</span>,
+            <span class="pill">12A &rarr; 1A &rarr; 12B</span>).
+            <strong>Prinzip:</strong> der elegante Modus &mdash; viele Dinge sind
+            verbunden, nichts reisst, der Hoerer bleibt im Fluss.
+          </p>
+        </section>
+        <section class="panel phase">
+          <h3>4. Harmonisches Finale (Tracks 17&ndash;23)</h3>
+          <p>
+            Zum Schluss die am besten belegten Schritte:
+            <span class="pill">3B &rarr; 3A</span> (The Martian &rarr; WestBam
+            &amp; Nena) ist ein sauberer Wechsel der Tonfarbe bei fast gleichem
+            Tempo. <strong>Prinzip:</strong> harmonische Navigation, um das Set
+            kontrolliert zu landen.
+          </p>
+        </section>
+      </div>
+
+      <section class="callout">
+        <h2>Lehrstueck: relative Dur/Moll im echten Set</h2>
+        <p>
+          Track 20 &rarr; 21, beide mit hoher Konfidenz:
+          <strong>The Martian &ndash; Tobacco Ties</strong>
+          (<span class="pill">3B</span>, 133&nbsp;BPM) zu
+          <strong>WestBam &amp; Nena &ndash; Oldschool Baby</strong>
+          (<span class="pill">3A</span>, 130&nbsp;BPM). Gleiche Zahl, anderer
+          Buchstabe, nur &minus;3&nbsp;BPM &mdash; genau die
+          <a class="term" href="../reference/0002-glossar.html#relative-major-minor">relative
+          Dur/Moll-Bewegung</a> aus der
+          <a href="../reference/0001-spotify-mix-entscheidungskarte.html">Entscheidungskarte</a>.
+          Verwandt, aber mit neuer Farbe.
+        </p>
+      </section>
+
+      <h3>Vollstaendige Trackliste (Solomun)</h3>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>#</th><th>Track</th><th>BPM</th><th>Camelot</th><th>Konfidenz</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="num">1</td><td>International Pony &ndash; Our House (Solomun Intro)</td><td class="num">128</td><td class="num">12B</td><td class="muted-cell">niedrig</td></tr>
+            <tr><td class="num">2</td><td>Liu Bei &ndash; Atlas World (Solomun Day Mix)</td><td class="num">122</td><td class="num">1A</td><td>mittel</td></tr>
+            <tr><td class="num">3</td><td>Night Talk &ndash; Gamma</td><td class="num">121</td><td class="num">3B</td><td>mittel</td></tr>
+            <tr><td class="num">4</td><td>Fur Coat &ndash; Monday</td><td class="num">123</td><td class="num">10A</td><td>mittel</td></tr>
+            <tr><td class="num">5</td><td>FreakMe &amp; Stan Ritch &ndash; Metronome</td><td class="num">123</td><td class="num">11A</td><td>mittel</td></tr>
+            <tr><td class="num">6</td><td>Kollektiv Turmstrasse &ndash; Sorry I Am Late (Extended)</td><td class="num">122</td><td class="num">2B</td><td>hoch</td></tr>
+            <tr><td class="num">7</td><td>SBTRKT feat. Ezra Koenig &ndash; New Dorp. New York (Solomun Edit)</td><td class="num">119</td><td class="num">8B</td><td class="muted-cell">niedrig</td></tr>
+            <tr><td class="num">8</td><td>Thomas Bangalter &ndash; Club Soda</td><td class="num">140</td><td class="num">3B</td><td>mittel</td></tr>
+            <tr><td class="num">9</td><td>Khan feat. Julee Cruise &ndash; Say Goodbye (LoSoul Mix)</td><td class="num">116</td><td class="num">7B</td><td>mittel</td></tr>
+            <tr><td class="num">10</td><td>Alix Alvarez &ndash; Fayall</td><td class="num">125</td><td class="num">8B</td><td>mittel</td></tr>
+            <tr><td class="num">11</td><td>Veerus &amp; Maxie Devine &ndash; My Train</td><td class="num">123</td><td class="num">7B</td><td>mittel</td></tr>
+            <tr><td class="num">12</td><td>Matthias Meyer &ndash; Tout Va Bien</td><td class="num">126</td><td class="num">4A</td><td>mittel</td></tr>
+            <tr><td class="num">13</td><td>Jairo Catelo &ndash; Timeless</td><td class="num">120</td><td class="num">12A</td><td>mittel</td></tr>
+            <tr><td class="num">14</td><td>SevenDoors &ndash; Movement of Whale</td><td class="num">122</td><td class="num">1A</td><td>mittel</td></tr>
+            <tr><td class="num">15</td><td>Jozif &ndash; Lady B's Lullaby</td><td class="num">120</td><td class="num">12B</td><td>mittel</td></tr>
+            <tr><td class="num">16</td><td>Simion feat. Roland Clark &ndash; Lost (Club Mix)</td><td class="num">118</td><td class="num">12A</td><td>mittel</td></tr>
+            <tr><td class="num">17</td><td>Solomun &ndash; Something We All Adore (Love Song Mix)</td><td class="num">120</td><td class="num">1B</td><td class="muted-cell">niedrig</td></tr>
+            <tr><td class="num">18</td><td>The Phenomenal Handclap Band &ndash; Baby (Clock Opera Remix)</td><td class="num">114</td><td class="num">1B</td><td>mittel</td></tr>
+            <tr><td class="num">19</td><td>Zola Jesus &ndash; Hikikomori (Oskar Offermann Remix)</td><td class="num muted-cell">&mdash;</td><td class="num muted-cell">&mdash;</td><td class="muted-cell">&mdash;</td></tr>
+            <tr><td class="num">20</td><td>The Martian &ndash; Tobacco Ties</td><td class="num">133</td><td class="num">3B</td><td>hoch</td></tr>
+            <tr><td class="num">21</td><td>WestBam &amp; Nena &ndash; Oldschool Baby (Piano Mix)</td><td class="num">130</td><td class="num">3A</td><td>hoch</td></tr>
+            <tr><td class="num">22</td><td>Mousse T. u.&nbsp;a. &ndash; Horny (Radio Slave &amp; Thomas Gandey Just 17 Mix)</td><td class="num">124</td><td class="num">1A</td><td>hoch</td></tr>
+            <tr><td class="num">23</td><td>Louie Austen &ndash; Hoping (Herbert's High Dub)</td><td class="num">124</td><td class="num">9A</td><td>mittel</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="small">
+        Quellen: <a href="https://www.setlist.fm/setlist/solomun/2015/boiler-room-tulum-mexico-7b4ebaa4.html">setlist.fm</a>,
+        <a href="https://www.1001tracklists.com/tracklist/2hnbu1k/solomun-tulum-diynamic-takeover-boiler-room-the-bpm-festival-mexico-2015-01-14.html">1001Tracklists</a>.
+        Daten und Quellenhinweise pro Track:
+        <a href="../playlists/solomun-boiler-room-tulum-2015.json">solomun-boiler-room-tulum-2015.json</a>.
+      </p>
+
+      <h2>Set 2 &mdash; Yousuke Yukimatsu, Boiler Room Tokyo</h2>
+      <p>
+        Der japanische DJ ¥OU$UK€ ¥UK1MAT$U wurde 2025 mit diesem Set zu einem
+        der meistgesehenen Boiler Rooms ueberhaupt. Sein Markenzeichen:
+        furchtlos genreuebergreifend &mdash; Hyperpop, Industrial-Techno, Rave,
+        Pop und Ambient in einem Bogen. In den Daten zeigt sich das als
+        <strong>breites Tempo-Gefaelle</strong> und <strong>mutige
+        Tonart-Spruenge</strong>. Das ist der ueberraschende Pol der Mission.
+      </p>
+
+      <div class="arc">
+        <strong>Der Bogen:</strong> ein langes Abbremsen von 150&nbsp;BPM
+        hinunter bis 120 &mdash; eine durchgehende Tempo-Treppe als roter Faden
+        &mdash; bevor der letzte Track noch einmal auf 134 anzieht.
+      </div>
+
+      <div class="grid">
+        <section class="panel phase">
+          <h3>1. Hochfrequenter Einstieg (Tracks 1&ndash;3)</h3>
+          <p>
+            100&nbsp;gecs (Hyperpop, <span class="pill">8A</span>, 150) zu Tzusing
+            (Industrial, <span class="pill">1A</span>, 145) ist harmonisch ein
+            weiter Sprung &mdash; aber Tempo und Intensitaet bleiben oben.
+            <strong>Prinzip:</strong> In harten Styles traegt die
+            <a class="term" href="../reference/0002-glossar.html#energy">Energie</a>,
+            nicht die Tonart. Genre und Key duerfen springen, der Druck verbindet.
+          </p>
+        </section>
+        <section class="panel phase">
+          <h3>2. Rave-Achse, gehalten (Tracks 3&ndash;5)</h3>
+          <p>
+            Underworld &bdquo;Moaner&ldquo; und Prodigy &bdquo;Firestarter&ldquo;
+            liegen beide auf <span class="pill">3A</span> bei
+            <span class="pill">140&nbsp;BPM</span>. Gleicher Key, gleiches Tempo
+            &mdash; selbst im harten Set der sauberste denkbare
+            <a class="term" href="../reference/0002-glossar.html#blend">Blend</a>.
+            <strong>Prinzip:</strong> elegant geht auch laut.
+          </p>
+        </section>
+        <section class="panel phase">
+          <h3>3. Abkuehlung als Tempo-Treppe (Tracks 7&ndash;14)</h3>
+          <p>
+            Stetiges Absteigen 134 &rarr; 130 &rarr; 129 &rarr; &hellip; &rarr;
+            120, mit kuehnen Key-Spruengen dazwischen (u.&nbsp;a.
+            <span class="pill">11A &rarr; 5A</span>, ein
+            <a class="term" href="../reference/0002-glossar.html#gegenpol">Gegenpol</a>).
+            <strong>Prinzip:</strong> das fallende Tempo ist der rote Faden &mdash;
+            harmonische Naehe wird der emotionalen Kurve untergeordnet.
+          </p>
+        </section>
+        <section class="panel phase">
+          <h3>4. Letzter Ruck (Tracks 15&ndash;16)</h3>
+          <p>
+            Nach einer ruhigen Ambient-Passage zieht Lorenzo Senni
+            &bdquo;THINK BIG&ldquo; (<span class="pill">6B</span>, 134) das Tempo
+            noch einmal an. <strong>Prinzip:</strong> ein bewusster Bruch als
+            Schlusspointe statt sanftem Ausklang.
+          </p>
+        </section>
+      </div>
+
+      <section class="callout">
+        <h2>Lehrstueck: gleicher Key, gleiches Tempo</h2>
+        <p>
+          Track 4 &rarr; 5: <strong>Underworld &ndash; Moaner</strong>
+          (<span class="pill">3A</span>, 140) zu
+          <strong>The Prodigy &ndash; Firestarter (Empirion Mix)</strong>
+          (<span class="pill">3A</span>, 140). Identische Tonart, identisches
+          Tempo &mdash; der Ideal-Fall &bdquo;gleicher Key, nahes Tempo&ldquo; aus
+          der Entscheidungskarte, hier mitten in einem kompromisslos harten Set.
+          Derselbe Grundsatz wie bei Solomuns relativem Wechsel, nur ueber die
+          direkteste Route.
+        </p>
+      </section>
+
+      <h3>Vollstaendige Trackliste (Yousuke Yukimatsu)</h3>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>#</th><th>Track</th><th>BPM</th><th>Camelot</th><th>Konfidenz</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="num">1</td><td>100 gecs &ndash; Dumbest Girl Alive</td><td class="num">150</td><td class="num">8A</td><td>hoch</td></tr>
+            <tr><td class="num">2</td><td>Tzusing &ndash; Residual Stress</td><td class="num">145</td><td class="num">1A</td><td>hoch</td></tr>
+            <tr><td class="num">3</td><td>Skrillex &amp; Nai Barghouti &ndash; XENA (Mixed)</td><td class="num">145</td><td class="num">3B</td><td>mittel</td></tr>
+            <tr><td class="num">4</td><td>Underworld &ndash; Moaner</td><td class="num">140</td><td class="num">3A</td><td>mittel</td></tr>
+            <tr><td class="num">5</td><td>The Prodigy &ndash; Firestarter (Empirion Mix)</td><td class="num">140</td><td class="num">3A</td><td>mittel</td></tr>
+            <tr><td class="num">6</td><td>El Gordo &ndash; Kuliki</td><td class="num muted-cell">&mdash;</td><td class="num muted-cell">&mdash;</td><td class="muted-cell">&mdash;</td></tr>
+            <tr><td class="num">7</td><td>Romy &amp; Fred again.. &ndash; Strong</td><td class="num">134</td><td class="num">12B</td><td>mittel</td></tr>
+            <tr><td class="num">8</td><td>3Phaz &ndash; Drum Track</td><td class="num">130</td><td class="num">9B</td><td>hoch</td></tr>
+            <tr><td class="num">9</td><td>For Those I Love &ndash; I Have a Love (Overmono Remix)</td><td class="num">129</td><td class="num">4A</td><td>mittel</td></tr>
+            <tr><td class="num">10</td><td>The Chemical Brothers &ndash; The Darkness That You Fear</td><td class="num muted-cell">&mdash;</td><td class="num muted-cell">&mdash;</td><td class="muted-cell">&mdash;</td></tr>
+            <tr><td class="num">11</td><td>The Chemical Brothers &ndash; Free Yourself</td><td class="num">125</td><td class="num">11A</td><td>mittel</td></tr>
+            <tr><td class="num">12</td><td>Jamie xx &ndash; The Rest Is Noise</td><td class="num">125</td><td class="num">5A</td><td>mittel</td></tr>
+            <tr><td class="num">13</td><td>SOPHIE &ndash; Whole New World/Pretend World</td><td class="num">125</td><td class="num">3B</td><td>mittel</td></tr>
+            <tr><td class="num">14</td><td>Skrillex &ndash; With You, Friends (Long Drive)</td><td class="num">120</td><td class="num">10B</td><td>mittel</td></tr>
+            <tr><td class="num">15</td><td>Karla Borecky &ndash; The Passing of Clouds</td><td class="num muted-cell">&mdash;</td><td class="num muted-cell">&mdash;</td><td class="muted-cell">&mdash;</td></tr>
+            <tr><td class="num">16</td><td>Lorenzo Senni &ndash; THINK BIG</td><td class="num">134</td><td class="num">6B</td><td>mittel</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="small">
+        Quellen: <a href="https://set79.com/tracklist/soundcloud.com/flavio-almeida-99126045/u-ukeur-uk1mat-u-boiler-room">Set79-Tracklist</a>,
+        <a href="https://en.wikipedia.org/wiki/Yousuke_Yukimatsu">Wikipedia: Yousuke Yukimatsu</a>.
+        Daten, Spotify-/YouTube-/Beatport-Links und Quellenhinweise pro Track:
+        <a href="../playlists/yousuke-yukimatsu-boiler-room.json">yousuke-yukimatsu-boiler-room.json</a>.
+      </p>
+
+      <h2>Was die beiden Sets gegenueberstellen</h2>
+      <div class="grid">
+        <section class="panel">
+          <h3>Solomun = erst passend</h3>
+          <p>
+            Enges Tempoband, viele weiche harmonische Schritte, der Bruch
+            (140-Spitze) ist die Ausnahme. Das ist der elegante Weg: Tempo bleibt
+            konstant, die Tonart wandert sanft.
+          </p>
+        </section>
+        <section class="panel">
+          <h3>Yousuke = dann spannend</h3>
+          <p>
+            Breites Tempo-Gefaelle, Genre- und Key-Spruenge als Regel, gehalten
+            von einer durchgehenden Energie- und Tempo-Kurve. Das ist der
+            ueberraschende Weg ueber Genregrenzen.
+          </p>
+        </section>
+      </div>
+      <p>
+        Beide folgen derselben Grundregel des Kurses: <strong>Wenn ein Ding
+        bricht, baut ein anderes die Bruecke.</strong> Solomun haelt meist das
+        Tempo und variiert die Tonart vorsichtig; Yousuke bricht Genre und Key
+        frei, haelt aber Energie und Tempobogen zusammen. Zwei Wege, ein Prinzip.
+      </p>
+
+      <p class="small">
+        Weiter zur <a href="../reference/0001-spotify-mix-entscheidungskarte.html">Mix-Entscheidungskarte</a>
+        oder zum <a href="../reference/0002-glossar.html">Glossar</a>.
+        Kontext zu den Sets:
+        <a href="https://www.trackidblog.com/2021/05/relive-solomuns-best-moments-from-his.html">Track!D zu Solomun Tulum</a>,
+        <a href="https://www.billboard.com/music/music-news/yousuke-yukimatsu-interview-dj-billboard-japan-feature-1236227207/">Billboard-Interview mit Yousuke Yukimatsu</a>.
+      </p>
+    </main>
+  </body>
+</html>
