@@ -14,8 +14,9 @@
         <h1>Erst passend, dann spannend</h1>
         <p class="lede">
           Du lernst, den Spotify-Mix-Screen als Entscheidungssystem zu lesen:
-          Tempo, Tonart, Phrase und Bass. Danach kannst du den Screenshot schon
-          sinnvoll beurteilen.
+          Tempo, Tonart,
+          <a class="term" href="../reference/0002-glossar.html#phrase">Phrase</a> und Bass.
+          Danach kannst du den Screenshot schon sinnvoll beurteilen.
         </p>
       </header>
 
@@ -27,9 +28,10 @@
           Spotify sagt selbst: Beim Mixen helfen
           <a class="term" href="../reference/0002-glossar.html#bpm">BPM</a>,
           <a class="term" href="../reference/0002-glossar.html#camelot-key">Camelot-Key</a>,
-          <span class="term">Waveform</span>
-          und <span class="term">Beatdaten</span>; man kann Auto nutzen oder
-          Lautstaerke, EQ und Effekte selbst formen.
+          <a class="term" href="../reference/0002-glossar.html#waveform">Waveform</a>
+          und <a class="term" href="../reference/0002-glossar.html#beatdaten">Beatdaten</a>; man kann Auto nutzen oder
+          Lautstaerke, <a class="term" href="../reference/0002-glossar.html#eq">EQ</a> und
+          <a class="term" href="../reference/0002-glossar.html#effekte">Effekte</a> selbst formen.
           <a href="https://newsroom.spotify.com/2025-08-19/mix-your-favorite-playlists-seamlessly-by-adding-your-own-transitions/">Quelle: Spotify Newsroom</a>.
         </p>
         <p>
@@ -45,16 +47,19 @@
           <h3>Tempo</h3>
           <p>
             <span class="pill">120 BPM</span> zu <span class="pill">122 BPM</span>
-            ist nah. Das ist gut fuer einen Blend, weil der Puls nicht sofort
-            auseinanderfaellt.
+            ist nah. Das ist gut fuer einen
+            <a class="term" href="../reference/0002-glossar.html#blend">Blend</a>,
+            weil der Puls nicht sofort auseinanderfaellt.
           </p>
         </section>
         <section class="panel">
           <h3>Tonart</h3>
           <p>
             <span class="pill">3B</span> zu <span class="pill">3A</span> ist
-            gleiche Zahl, anderer Letter. Auf dem Camelot-System ist das eine
-            sichere, subtile Major/Minor-Beziehung.
+            gleiche Zahl, anderer Buchstabe. Auf dem
+            <a class="term" href="../reference/0002-glossar.html#camelot-wheel">Camelot-Wheel</a>
+            ist das eine sichere, subtile
+            <a class="term" href="../reference/0002-glossar.html#relative-major-minor">relative Dur/Moll</a>-Beziehung.
             <a href="https://mixedinkey.com/harmonic-mixing-guide/">Quelle: Mixed In Key</a>.
           </p>
         </section>
@@ -69,8 +74,10 @@
         <section class="panel">
           <h3>Bass</h3>
           <p>
-            Die gelbe EQ-Kurve zeigt einen Basswechsel in der Mitte. Das ist
-            wichtig, weil zwei Basslines gleichzeitig schnell matschig werden.
+            Die gelbe EQ-Kurve zeigt einen
+            <a class="term" href="../reference/0002-glossar.html#basswechsel">Basswechsel</a>
+            in der Mitte. Das ist wichtig, weil zwei Basslines gleichzeitig
+            schnell matschig werden.
             <a href="https://www.digitaldjtips.com/rock-the-dancefloor/five-basic-dj-transitions/">Quelle: Digital DJ Tips</a>.
           </p>
         </section>
@@ -87,9 +94,9 @@
         <div class="meter">
           <h3>Fall A: 120 BPM / 122 BPM, 3B / 3A, 2 Takte</h3>
           <div class="choice-row">
-            <button data-answer="a" data-good="true">Tempo + Key</button>
+            <button data-answer="a" data-good="true">Tempo + Tonart</button>
             <button data-answer="a">Bass + Cut</button>
-            <button data-answer="a">Filter + FX</button>
+            <button data-answer="a">Filter + Effekte</button>
           </div>
           <output id="feedback-a"></output>
         </div>
@@ -107,8 +114,8 @@
         <div class="meter">
           <h3>Fall C: Gleiches Tempo, aber Vocals und Akkorde reiben</h3>
           <div class="choice-row">
-            <button data-answer="c">Mehr Lautheit</button>
-            <button data-answer="c">Mehr Overlap</button>
+            <button data-answer="c">Mehr Lautstaerke</button>
+            <button data-answer="c">Mehr Ueberlappung</button>
             <button data-answer="c" data-good="true">Weniger Melodie</button>
           </div>
           <output id="feedback-c"></output>
@@ -146,7 +153,7 @@
     <script>
       const feedback = {
         a: {
-          good: "Ja. Tempo und Key tragen hier schon stark; die 2 Takte machen den Wechsel kompakt.",
+          good: "Ja. Tempo und Tonart tragen hier schon stark; die 2 Takte machen den Wechsel kompakt.",
           bad: "Fast, aber hier ist die staerkste Bruecke die Naehe von Tempo und Tonart."
         },
         b: {
