@@ -180,6 +180,47 @@ button:focus {
   outline: 2px solid rgba(47, 123, 189, 0.18);
 }
 
+button:disabled {
+  cursor: default;
+}
+
+button:disabled:hover,
+button:disabled:focus {
+  outline: none;
+}
+
+button.correct {
+  border-color: var(--accent);
+  background: var(--soft);
+  box-shadow: inset 0 0 0 2px var(--accent);
+}
+
+button.wrong {
+  border-color: #b23b3b;
+  background: #fbecec;
+  box-shadow: inset 0 0 0 2px #b23b3b;
+}
+
+.trainer-foot {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 14px;
+  margin-top: 18px;
+  padding-top: 14px;
+  border-top: 1px solid var(--line);
+}
+
+.score {
+  font: 700 1rem ui-sans-serif, system-ui, sans-serif;
+}
+
+button.reset {
+  min-height: 40px;
+  padding: 0 16px;
+  flex: 0 0 auto;
+}
+
 output,
 .feedback {
   display: block;
@@ -193,6 +234,22 @@ output,
   color: var(--muted);
   font-family: ui-sans-serif, system-ui, sans-serif;
   font-size: 0.9rem;
+}
+
+.topnav {
+  font-family: ui-sans-serif, system-ui, sans-serif;
+  font-size: 0.9rem;
+  margin-bottom: 18px;
+}
+
+.table-wrap {
+  overflow-x: auto;
+  margin: 14px 0;
+}
+
+.table-wrap table {
+  margin: 0;
+  min-width: 480px;
 }
 
 table {

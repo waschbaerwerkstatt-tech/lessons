@@ -20,7 +20,8 @@ Uebergaenge, die trotzdem musikalisch absichtlich klingen.
 - Kurze, interaktive Lektionen auf Deutsch.
 - Praxis direkt an Spotify Mix, nicht an kompletter DJ-Hardware.
 - Referenzen sollen schnell wiederholbar und druckbar sein.
-- Der Workspace bleibt lokal und ohne GitHub-Verbindung.
+- Der Workspace wird oeffentlich ueber GitHub Pages veroeffentlicht; Inhalte
+  sind damit fuer Fremde lesbar und sollten keine privaten Daten enthalten.
 
 ## Out of scope
 - Live-DJing mit Controller, Beatmatching von Hand und Club-Performance.

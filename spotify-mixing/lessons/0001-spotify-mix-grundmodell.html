@@ -8,6 +8,7 @@
   </head>
   <body>
     <main>
+      <nav class="topnav"><a href="../index.html">&larr; Kursuebersicht</a></nav>
       <header>
         <div class="eyebrow">Lektion 0001</div>
         <h1>Erst passend, dann spannend</h1>
@@ -23,8 +24,10 @@
       <section class="callout">
         <h2>Das Grundmodell</h2>
         <p>
-          Spotify sagt selbst: Beim Mixen helfen <span class="term">BPM</span>,
-          <span class="term">Camelot-Key</span>, <span class="term">Waveform</span>
+          Spotify sagt selbst: Beim Mixen helfen
+          <a class="term" href="../reference/0002-glossar.html#bpm">BPM</a>,
+          <a class="term" href="../reference/0002-glossar.html#camelot-key">Camelot-Key</a>,
+          <span class="term">Waveform</span>
           und <span class="term">Beatdaten</span>; man kann Auto nutzen oder
           Lautstaerke, EQ und Effekte selbst formen.
           <a href="https://newsroom.spotify.com/2025-08-19/mix-your-favorite-playlists-seamlessly-by-adding-your-own-transitions/">Quelle: Spotify Newsroom</a>.
@@ -110,13 +113,20 @@
           </div>
           <output id="feedback-c"></output>
         </div>
+
+        <div class="trainer-foot">
+          <span class="score" id="score" role="status" aria-live="polite">0 / 3 beantwortet</span>
+          <button type="button" class="reset" id="reset">Neu starten</button>
+        </div>
       </section>
 
       <h2>Spotify-Regel fuer diese Woche</h2>
       <p>
         Wenn du einen Uebergang ausprobierst, veraendere erst nur einen Hebel:
-        <span class="term">Taktlaenge</span>, <span class="term">Basswechsel</span>
-        oder <span class="term">Filter</span>. Hoere dann A/B: Wurde der Wechsel
+        <a class="term" href="../reference/0002-glossar.html#takt">Taktlaenge</a>,
+        <a class="term" href="../reference/0002-glossar.html#basswechsel">Basswechsel</a>
+        oder <a class="term" href="../reference/0002-glossar.html#filter">Filter</a>.
+        Hoere dann A/B: Wurde der Wechsel
         unsichtbarer, klarer oder interessanter?
       </p>
       <p>
@@ -149,13 +159,59 @@
         }
       };
 
+      const groups = ["a", "b", "c"];
+      const scoreEl = document.getElementById("score");
+      const answered = new Set();
+      let score = 0;
+
+      function updateScore() {
+        const correct = score === 1 ? "1 richtig" : `${score} richtig`;
+        scoreEl.textContent = `${answered.size} / 3 beantwortet (${correct})`;
+      }
+
+      function buttonsOf(group) {
+        return document.querySelectorAll(`button[data-answer="${group}"]`);
+      }
+
       document.querySelectorAll("button[data-answer]").forEach((button) => {
         button.addEventListener("click", () => {
           const group = button.dataset.answer;
+          if (answered.has(group)) return;
+          answered.add(group);
+
           const target = document.getElementById(`feedback-${group}`);
-          const result = button.dataset.good ? feedback[group].good : feedback[group].bad;
-          target.textContent = result;
+          const isGood = button.dataset.good === "true";
+
+          if (isGood) {
+            score += 1;
+            button.classList.add("correct");
+          } else {
+            button.classList.add("wrong");
+            buttonsOf(group).forEach((b) => {
+              if (b.dataset.good === "true") b.classList.add("correct");
+            });
+          }
+
+          buttonsOf(group).forEach((b) => {
+            b.disabled = true;
+          });
+
+          target.textContent = isGood ? feedback[group].good : feedback[group].bad;
+          updateScore();
         });
+      });
+
+      document.getElementById("reset").addEventListener("click", () => {
+        answered.clear();
+        score = 0;
+        groups.forEach((group) => {
+          document.getElementById(`feedback-${group}`).textContent = "";
+          buttonsOf(group).forEach((b) => {
+            b.disabled = false;
+            b.classList.remove("correct", "wrong");
+          });
+        });
+        updateScore();
       });
     </script>
   </body>
