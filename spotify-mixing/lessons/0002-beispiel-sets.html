@@ -94,6 +94,44 @@
         margin: 4px 0;
       }
 
+      .flow {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin: 0 0 6px;
+        font-family: ui-sans-serif, system-ui, sans-serif;
+        font-weight: 700;
+      }
+
+      .flow .chip {
+        border-radius: 999px;
+        padding: 4px 13px;
+        font-size: 0.85rem;
+      }
+
+      .chip.safe { background: #e4f0ea; color: #1c7a51; }
+      .chip.bold { background: #f6ead9; color: #9a5b10; }
+
+      .arc.safe { border-left: 4px solid #1f8a5b; }
+      .arc.bold { border-left: 4px solid #9a5b10; }
+
+      .phases-safe .phase { border-left-color: #1f8a5b; }
+      .phases-bold .phase { border-left-color: #9a5b10; }
+
+      .cmp {
+        border-left: 5px solid var(--c);
+        background: var(--bg);
+      }
+
+      .cmp .tagline {
+        font-family: ui-sans-serif, system-ui, sans-serif;
+        font-size: 0.72rem;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--c);
+      }
+
       @media print {
         .camelot-path {
           display: none;
@@ -168,6 +206,7 @@
       </section>
 
       <h2>Set 1 &mdash; Solomun, Boiler Room Tulum 2015</h2>
+      <div class="flow"><span class="chip safe">erst passend</span></div>
       <figure class="set-hero">
         <a href="https://www.youtube.com/watch?v=bk6Xst6euQk" target="_blank" rel="noopener">
           <img src="https://img.youtube.com/vi/bk6Xst6euQk/maxresdefault.jpg"
@@ -189,7 +228,7 @@
         Das ist der elegante Pol der Mission.
       </p>
 
-      <div class="arc">
+      <div class="arc safe">
         <strong>Der Bogen:</strong> Das Tempo bleibt erstaunlich eng &mdash; fast
         alles zwischen 114 und 126&nbsp;BPM, mit einem geschaetzten Ausreisser
         (Club Soda ~140) und einem Anziehen zum Finale (~131). Die
@@ -210,7 +249,7 @@
         <output class="cw-readout" aria-live="polite"></output>
       </figure>
 
-      <div class="grid">
+      <div class="grid phases-safe">
         <section class="panel phase">
           <h3>1. Tempo-Plateau (Tracks 1&ndash;7)</h3>
           <p>
@@ -319,6 +358,7 @@
       </p>
 
       <h2>Set 2 &mdash; Yousuke Yukimatsu, Boiler Room Tokyo</h2>
+      <div class="flow"><span class="chip bold">dann spannend</span></div>
       <figure class="set-hero">
         <a href="https://www.youtube.com/watch?v=T1tcUfUhR5U" target="_blank" rel="noopener">
           <img src="https://img.youtube.com/vi/T1tcUfUhR5U/maxresdefault.jpg"
@@ -340,7 +380,7 @@
         Tonart-Spruenge</strong>. Das ist der ueberraschende Pol der Mission.
       </p>
 
-      <div class="arc">
+      <div class="arc bold">
         <strong>Der Bogen:</strong> ein langes Abbremsen vom Start (gefuehlt
         ~150&nbsp;BPM) bis ~116, dann ein tiefer Ambient-Einbruch (Karla,
         70&nbsp;BPM) und ein Schluss-Ruck (THINK BIG, 135). Achtung Oktave:
@@ -363,7 +403,7 @@
         <output class="cw-readout" aria-live="polite"></output>
       </figure>
 
-      <div class="grid">
+      <div class="grid phases-bold">
         <section class="panel phase">
           <h3>1. Hochfrequenter Einstieg (Tracks 1&ndash;5)</h3>
           <p>
@@ -462,7 +502,8 @@
 
       <h2>Was die beiden Sets gegenueberstellen</h2>
       <div class="grid">
-        <section class="panel">
+        <section class="panel cmp" style="--c: #1f8a5b; --bg: #f1f7f3;">
+          <div class="tagline">Passend</div>
           <h3>Solomun = erst passend</h3>
           <p>
             Sehr enges Tempoband als Konstante; die Tonart variiert freier, als
@@ -470,7 +511,8 @@
             (die 140er-Spitze) ist die Ausnahme.
           </p>
         </section>
-        <section class="panel">
+        <section class="panel cmp" style="--c: #9a5b10; --bg: #f8f1e8;">
+          <div class="tagline">Spannend</div>
           <h3>Yousuke = dann spannend</h3>
           <p>
             Breites Tempo-Gefaelle, Genre- und Key-Spruenge als Regel, gehalten

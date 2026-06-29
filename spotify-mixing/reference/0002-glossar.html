@@ -38,6 +38,31 @@
       .entry p {
         margin: 0;
       }
+
+      .kpill {
+        display: inline-block;
+        font-family: ui-sans-serif, system-ui, sans-serif;
+        font-size: 0.85rem;
+        font-weight: 700;
+        border-radius: 999px;
+        padding: 2px 9px;
+        white-space: nowrap;
+      }
+
+      .kpill.safe { background: #e4f0ea; color: #1c7a51; }
+      .kpill.fresh { background: #e6eff7; color: #2f7bbd; }
+      .kpill.bold { background: #f6ead9; color: #9a5b10; }
+
+      .legend {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        align-items: center;
+        margin: 14px 0 0;
+        font-family: ui-sans-serif, system-ui, sans-serif;
+        font-size: 0.82rem;
+        color: var(--muted);
+      }
     </style>
   </head>
   <body>
@@ -59,11 +84,17 @@
           Kompatible Tonarten liegen auf dem Camelot-Wheel nah beieinander:
           gleicher Key, benachbarte Zahl oder gleiche Zahl mit anderem
           Buchstaben. Ein gegenueberliegendes Feld ergaenzt sich nicht
-          automatisch weich &mdash; ein Sprung wie <span class="pill">3A &rarr; 9A</span>
+          automatisch weich &mdash; ein Sprung wie <span class="kpill bold">3A &rarr; 9A</span>
           gilt als extreme, aufmerksamkeitsstarke Bewegung und eignet sich als
           bewusster Bruch, nicht als Standardblend.
           <a href="https://mixedinkey.com/harmonic-mixing-guide/">Quelle: Mixed In Key Harmonic Mixing Guide</a>.
         </p>
+        <div class="legend">
+          Farbcode:
+          <span class="kpill safe">passend / sicher</span>
+          <span class="kpill fresh">kompatibel</span>
+          <span class="kpill bold">mutig / spannend</span>
+        </div>
       </section>
 
       <figure>
@@ -111,7 +142,7 @@
           <h2>Relative Major/Minor</h2>
           <p>
             Gleiche Zahl, anderer Buchstabe, etwa
-            <span class="pill">3A &rarr; 3B</span>. Eng verwandte Tonarten, die
+            <span class="kpill fresh">3A &rarr; 3B</span>. Eng verwandte Tonarten, die
             heller (Dur) oder dunkler (Moll) wirken &mdash; eine sichere, subtile
             Bewegung.
           </p>
@@ -121,8 +152,8 @@
           <h2>Adjacent Key</h2>
           <p>
             Direkt benachbarte Zahl auf demselben Ring, etwa
-            <span class="pill">3A &rarr; 2A</span> oder
-            <span class="pill">3A &rarr; 4A</span>. Bleibt harmonisch frisch,
+            <span class="kpill fresh">3A &rarr; 2A</span> oder
+            <span class="kpill fresh">3A &rarr; 4A</span>. Bleibt harmonisch frisch,
             ohne statisch zu wirken, und gilt als verlaessliche Standardbewegung.
           </p>
         </article>
@@ -131,7 +162,7 @@
           <h2>Gegenpol / Curveball</h2>
           <p>
             Eine weit entfernte Camelot-Bewegung, meist sechs Zahlen entfernt
-            (<span class="pill">3A &rarr; 9A</span>). Wirkt ueberraschend, ist
+            (<span class="kpill bold">3A &rarr; 9A</span>). Wirkt ueberraschend, ist
             aber nicht weich kompatibel &mdash; eher kurz, gefiltert oder auf
             eine harte Phrase gesetzt.
           </p>
