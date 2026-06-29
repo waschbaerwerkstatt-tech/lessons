@@ -71,11 +71,11 @@
       "version": null,
       "spotify_query": "Fur Coat Monday",
       "audio": {
-        "bpm": 123,
-        "key": "B minor",
-        "camelot": "10A",
-        "confidence": "medium",
-        "source_note": "Public Tunebat snippet."
+        "bpm": 122,
+        "key": "D major",
+        "camelot": "10B",
+        "confidence": "high",
+        "source_note": "Spotify Mix in-app data (user screenshot): 122 BPM, Camelot 10B. Supersedes earlier Tunebat estimate (123 BPM / 10A)."
       }
     },
     {
@@ -185,10 +185,10 @@
       "spotify_query": "Matthias Meyer Tout Va Bien Foremost Poets Moonraker Acappella",
       "audio": {
         "bpm": 126,
-        "key": "F minor",
-        "camelot": "4A",
-        "confidence": "medium",
-        "source_note": "Public Tunebat snippet for Tout Va Bien; acappella overlay not separately analyzed."
+        "key": "G minor",
+        "camelot": "6A",
+        "confidence": "high",
+        "source_note": "Spotify Mix in-app data (user screenshot): 126 BPM, Camelot 6A. Supersedes earlier Tunebat estimate (F minor / 4A)."
       }
     },
     {
@@ -269,10 +269,10 @@
       "spotify_query": "The Phenomenal Handclap Band Baby Clock Opera Remix",
       "audio": {
         "bpm": 114,
-        "key": "B major",
-        "camelot": "1B",
-        "confidence": "medium",
-        "source_note": "SongBPM snippet; Musicstax-related snippets report C# major/3B at 113 BPM."
+        "key": "Eb minor",
+        "camelot": "2A",
+        "confidence": "high",
+        "source_note": "Spotify Mix in-app data (user screenshot): 114 BPM, Camelot 2A. Supersedes earlier estimate (B major / 1B)."
       }
     },
     {
@@ -310,11 +310,11 @@
       "version": "Piano Mix",
       "spotify_query": "WestBam Nena Oldschool Baby Piano Mix",
       "audio": {
-        "bpm": 130,
+        "bpm": 131,
         "key": "A# minor",
         "camelot": "3A",
         "confidence": "high",
-        "source_note": "Public Tunebat and Beatport snippets."
+        "source_note": "Spotify Mix in-app data (user screenshot): 131 BPM, Camelot 3A (confirms key; BPM 131)."
       }
     },
     {

@@ -61,6 +61,31 @@
         padding: 8px 10px;
       }
 
+      .cw-yt {
+        display: inline-block;
+        margin-top: 4px;
+        font-weight: 700;
+        color: #155c96;
+        text-decoration: none;
+      }
+
+      .cw-yt:hover,
+      .cw-yt:focus {
+        text-decoration: underline;
+      }
+
+      .set-hero {
+        margin: 16px 0;
+      }
+
+      .set-hero img {
+        width: min(100%, 480px);
+        display: block;
+        margin: 4px auto;
+        border-radius: 10px;
+        box-shadow: 0 10px 26px rgba(0, 0, 0, 0.18);
+      }
+
       @media print {
         .camelot-path {
           display: none;
@@ -103,6 +128,18 @@
       </section>
 
       <h2>Set 1 &mdash; Solomun, Boiler Room Tulum 2015</h2>
+      <figure class="set-hero">
+        <a href="https://www.youtube.com/watch?v=bk6Xst6euQk" target="_blank" rel="noopener">
+          <img src="https://img.youtube.com/vi/bk6Xst6euQk/maxresdefault.jpg"
+               onerror="this.onerror=null; this.src='https://img.youtube.com/vi/bk6Xst6euQk/hqdefault.jpg';"
+               alt="Videovorschau: Solomun bei Boiler Room Tulum 2015" loading="lazy">
+        </a>
+        <figcaption>
+          Ganzes Set:
+          <a href="https://www.youtube.com/watch?v=bk6Xst6euQk" target="_blank" rel="noopener">Solomun &ndash; Boiler Room Tulum 2015 (YouTube)</a>.
+          Bild: offizielles YouTube-Thumbnail.
+        </figcaption>
+      </figure>
       <p>
         Einer der meistgesehenen DJ-Mitschnitte ueberhaupt (ueber 50 Mio. Aufrufe):
         der Diynamic-Chef im mexikanischen Dschungel, Signatur-Sound aus tiefem,
@@ -122,6 +159,8 @@
           Der Weg durchs Camelot-Wheel: Schiebe durch die Tracks. Der aktuelle
           Track ist gruen markiert, die Spur zieht nach und verblasst Schritt um
           Schritt. Tracks ohne belegte Tonart erscheinen nicht auf dem Rad.
+          Der Link unter der Anzeige springt ins YouTube-Video &mdash; bei Yousuke pro
+          Track an die Trackzeit, bei Solomun (noch) zum Set-Start.
         </figcaption>
         <div class="cw"></div>
         <input type="range" class="cw-slider" min="1" max="23" value="1" aria-label="Solomun-Set: Track auswaehlen">
@@ -233,6 +272,18 @@
       </p>
 
       <h2>Set 2 &mdash; Yousuke Yukimatsu, Boiler Room Tokyo</h2>
+      <figure class="set-hero">
+        <a href="https://www.youtube.com/watch?v=T1tcUfUhR5U" target="_blank" rel="noopener">
+          <img src="https://img.youtube.com/vi/T1tcUfUhR5U/maxresdefault.jpg"
+               onerror="this.onerror=null; this.src='https://img.youtube.com/vi/T1tcUfUhR5U/hqdefault.jpg';"
+               alt="Videovorschau: Yousuke Yukimatsu bei Boiler Room Tokyo" loading="lazy">
+        </a>
+        <figcaption>
+          Ganzes Set:
+          <a href="https://www.youtube.com/watch?v=T1tcUfUhR5U" target="_blank" rel="noopener">¥OU$UK€ ¥UK1MAT$U &ndash; Boiler Room Tokyo (YouTube)</a>.
+          Bild: offizielles YouTube-Thumbnail.
+        </figcaption>
+      </figure>
       <p>
         Der japanische DJ ¥OU$UK€ ¥UK1MAT$U wurde 2025 mit diesem Set zu einem
         der meistgesehenen Boiler Rooms ueberhaupt. Sein Markenzeichen:
@@ -253,6 +304,8 @@
           Der Weg durchs Camelot-Wheel: Schiebe durch die Tracks. Der aktuelle
           Track ist gruen markiert, die Spur zieht nach und verblasst Schritt um
           Schritt. Tracks ohne belegte Tonart erscheinen nicht auf dem Rad.
+          Der Link unter der Anzeige springt ins YouTube-Video &mdash; bei Yousuke pro
+          Track an die Trackzeit, bei Solomun (noch) zum Set-Start.
         </figcaption>
         <div class="cw"></div>
         <input type="range" class="cw-slider" min="1" max="16" value="1" aria-label="Yousuke-Set: Track auswaehlen">
@@ -434,6 +487,15 @@
           ]
         };
 
+        const VIDEO = { solomun: "bk6Xst6euQk", yousuke: "T1tcUfUhR5U" };
+        const TIMES = { yousuke: [46, 174, 278, 518, 865, 1177, 1376, 1528, 1592, 1831, 2159, 2374, 2597, 2909, 3212, 3364] };
+
+        function fmt(sec) {
+          const m = Math.floor(sec / 60);
+          const s = sec % 60;
+          return m + ":" + (s < 10 ? "0" + s : s);
+        }
+
         const NS = "http://www.w3.org/2000/svg";
         const CX = 260, CY = 260, R_A = 212, R_B = 150, NODE = 17, WINDOW = 6;
 
@@ -462,6 +524,8 @@
 
         function build(fig) {
           const tracks = SETS[fig.dataset.set];
+          const ytBase = "https://www.youtube.com/watch?v=" + VIDEO[fig.dataset.set];
+          const times = TIMES[fig.dataset.set] || [];
           const holder = fig.querySelector(".cw");
           const slider = fig.querySelector(".cw-slider");
           const readout = fig.querySelector(".cw-readout");
@@ -538,7 +602,23 @@
             const tr = tracks[cur - 1];
             const bpm = tr.bpm != null ? tr.bpm + " BPM" : "BPM unbekannt";
             const cam = tr.c != null ? tr.c : "Camelot unbekannt";
-            readout.textContent = "#" + cur + "  ·  " + tr.l + "  ·  " + bpm + "  ·  " + cam;
+            while (readout.firstChild) readout.removeChild(readout.firstChild);
+            readout.appendChild(document.createTextNode("#" + cur + "  ·  " + tr.l + "  ·  " + bpm + "  ·  " + cam));
+
+            const link = document.createElement("a");
+            link.className = "cw-yt";
+            link.target = "_blank";
+            link.rel = "noopener";
+            const t = times[cur - 1];
+            if (t != null) {
+              link.href = ytBase + "&t=" + t + "s";
+              link.textContent = "▶ bei " + fmt(t) + " im Video";
+            } else {
+              link.href = ytBase;
+              link.textContent = "▶ Set auf YouTube";
+            }
+            readout.appendChild(document.createElement("br"));
+            readout.appendChild(link);
           }
 
           slider.addEventListener("input", render);
