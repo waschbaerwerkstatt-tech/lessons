@@ -86,6 +86,14 @@
         box-shadow: 0 10px 26px rgba(0, 0, 0, 0.18);
       }
 
+      .callout.data {
+        border-left-color: var(--warn);
+      }
+
+      .callout.data ul {
+        margin: 4px 0;
+      }
+
       @media print {
         .camelot-path {
           display: none;
@@ -124,6 +132,41 @@
           und wo gute DJs das Raster bewusst ueberschreiben. Die vollstaendigen
           Rohdaten liegen als JSON unter
           <span class="term">spotify-mixing/playlists/</span>.
+        </p>
+      </section>
+
+      <section class="callout data">
+        <h2>Wichtig: Online-Zahlen weichen von Spotify ab</h2>
+        <p>
+          Die BPM- und Camelot-Werte aus oeffentlichen Datenbanken (Tunebat,
+          Songstats, Beatport) decken sich oft <strong>nicht</strong> mit dem,
+          was Spotify in seiner eigenen Mix-Ansicht anzeigt &mdash; mal nur
+          leicht (BPM um 2&ndash;3 daneben), mal deutlich (voellig andere
+          Camelot-Tonart). Beispiele aus diesem Set:
+        </p>
+        <ul>
+          <li>Night Talk &ndash; Gamma: online <span class="pill">121 BPM / 3B</span>, in Spotify <span class="pill">124 BPM / 2A</span>.</li>
+          <li>Jairo Catelo &ndash; Timeless: online <span class="pill">12A</span>, in Spotify <span class="pill">5B</span> &mdash; eine ganz andere Tonart.</li>
+          <li>Alix Alvarez &ndash; Fayall: online <span class="pill">8B</span>, in Spotify <span class="pill">9A</span>.</li>
+          <li>100 gecs &ndash; Dumbest Girl Alive: online <span class="pill">150 BPM</span>, in Spotify <span class="pill">75 BPM</span> &mdash; Spotify zaehlt im Halftime.</li>
+        </ul>
+        <p>
+          Zwei Gruende: Erstens <strong>Versionen, Remixe und Edits</strong>
+          &mdash; die Datenbank hat oft einen anderen Schnitt analysiert als den,
+          der in der Playlist liegt. Zweitens schlicht <strong>schwankende
+          Datenqualitaet</strong>: Automatische Tempo- und Tonarterkennung irrt
+          sich (etwa doppelte oder halbe BPM), und verschiedene Dienste
+          widersprechen sich.
+        </p>
+        <p>
+          Fuer das Mixen <em>in</em> Spotify heisst das: Verlass dich auf das,
+          was die App dir zeigt. Externe Zahlen sind grobe Orientierung, keine
+          Wahrheit. Diese Lektion stellt die Werte gerade Track fuer Track auf
+          Spotifys In-App-Daten um; wo noch ein externer Schaetzwert steht, ist
+          er vorlaeufig (Quelle pro Track im JSON vermerkt). Auch die
+          Wheel-Visualisierung und die Walkthrough-Analyse weiter unten beruhen
+          noch auf den aelteren Zahlen und werden gerade auf Spotifys Werte
+          umgebaut.
         </p>
       </section>
 

@@ -28,11 +28,11 @@
         "beatport": "https://www.beatport.com/track/dumbest-girl-alive/20842458/"
       },
       "audio": {
-        "bpm": 150,
-        "key": "A minor",
-        "camelot": "8A",
+        "bpm": 75,
+        "key": "F major",
+        "camelot": "7B",
         "confidence": "high",
-        "source_note": "Public Tunebat/Songstats snippet."
+        "source_note": "Spotify Mix in-app data (user screenshot): 75 BPM, Camelot 7B. Supersedes earlier Tunebat estimate (150 BPM / 8A; likely double-time)."
       }
     },
     {
@@ -48,10 +48,10 @@
       },
       "audio": {
         "bpm": 145,
-        "key": "G# minor",
-        "camelot": "1A",
+        "key": "Eb major",
+        "camelot": "5B",
         "confidence": "high",
-        "source_note": "Public Tunebat/Songstats snippet."
+        "source_note": "Spotify Mix in-app data (user screenshot): 145 BPM, Camelot 5B. Supersedes earlier Tunebat estimate (G# minor / 1A)."
       }
     },
     {
@@ -68,10 +68,10 @@
       },
       "audio": {
         "bpm": 145,
-        "key": "C# major",
-        "camelot": "3B",
-        "confidence": "medium",
-        "source_note": "Public Tunebat snippet for the mixed Spotify track."
+        "key": "Bb minor",
+        "camelot": "3A",
+        "confidence": "high",
+        "source_note": "Spotify Mix in-app data (user screenshot): 145 BPM, Camelot 3A. Supersedes earlier Tunebat estimate (C# major / 3B)."
       }
     },
     {
@@ -87,10 +87,10 @@
       },
       "audio": {
         "bpm": 140,
-        "key": "A# minor",
-        "camelot": "3A",
-        "confidence": "medium",
-        "source_note": "Public Tunebat snippet."
+        "key": "C minor",
+        "camelot": "5A",
+        "confidence": "high",
+        "source_note": "Spotify Mix in-app data (user screenshot): 140 BPM, Camelot 5A. Supersedes earlier Tunebat estimate (A# minor / 3A)."
       }
     },
     {
@@ -107,10 +107,10 @@
       },
       "audio": {
         "bpm": 140,
-        "key": "A# minor",
-        "camelot": "3A",
-        "confidence": "medium",
-        "source_note": "Public Tunebat snippet; Beatport snippet for this listing reports 87 BPM/Bb major, likely a different tempo interpretation."
+        "key": "Bb major",
+        "camelot": "6B",
+        "confidence": "high",
+        "source_note": "Spotify Mix in-app data (user screenshot): 140 BPM, Camelot 6B. Supersedes earlier Tunebat estimate (A# minor / 3A)."
       }
     },
     {
@@ -147,8 +147,8 @@
         "bpm": 134,
         "key": "E major",
         "camelot": "12B",
-        "confidence": "medium",
-        "source_note": "Public Tunebat/Songstats snippet."
+        "confidence": "high",
+        "source_note": "Spotify Mix in-app data (user screenshot) confirms 134 BPM, Camelot 12B."
       }
     },
     {
@@ -167,7 +167,7 @@
         "key": "G major",
         "camelot": "9B",
         "confidence": "high",
-        "source_note": "Public Tunebat/Songstats snippet."
+        "source_note": "Spotify Mix in-app data (user screenshot) confirms 130 BPM, Camelot 9B."
       }
     },
     {
@@ -184,10 +184,10 @@
       },
       "audio": {
         "bpm": 129,
-        "key": "F minor",
-        "camelot": "4A",
-        "confidence": "medium",
-        "source_note": "Public Tunebat snippet."
+        "key": "Ab major",
+        "camelot": "4B",
+        "confidence": "high",
+        "source_note": "Spotify Mix in-app data (user screenshot): 129 BPM, Camelot 4B. Supersedes earlier Tunebat estimate (F minor / 4A)."
       }
     },
     {
@@ -205,8 +205,8 @@
         "bpm": 128,
         "key": "A major",
         "camelot": "11B",
-        "confidence": "low",
-        "source_note": "SongData.io/Tunebat for the canonical Original Mix report 128 BPM / A major (11B); the Set79 Spotify ID may point to a different version/remix."
+        "confidence": "high",
+        "source_note": "Spotify Mix in-app data (user screenshot) confirms 128 BPM, Camelot 11B."
       }
     },
     {
@@ -222,10 +222,10 @@
       },
       "audio": {
         "bpm": 125,
-        "key": "F# minor",
-        "camelot": "11A",
-        "confidence": "medium",
-        "source_note": "Public Tunebat snippet."
+        "key": "C# minor",
+        "camelot": "12A",
+        "confidence": "high",
+        "source_note": "Spotify Mix in-app data (user screenshot): 125 BPM, Camelot 12A. Supersedes earlier Tunebat estimate (F# minor / 11A)."
       }
     },
     {
@@ -241,10 +241,10 @@
       },
       "audio": {
         "bpm": 125,
-        "key": "C minor",
-        "camelot": "5A",
-        "confidence": "medium",
-        "source_note": "Public Tunebat snippet."
+        "key": "Eb major",
+        "camelot": "5B",
+        "confidence": "high",
+        "source_note": "Spotify Mix in-app data (user screenshot): 125 BPM, Camelot 5B. Supersedes earlier Tunebat estimate (C minor / 5A)."
       }
     },
     {
@@ -259,11 +259,11 @@
         "beatport": null
       },
       "audio": {
-        "bpm": 125,
-        "key": "C# major",
-        "camelot": "3B",
-        "confidence": "medium",
-        "source_note": "Public Tunebat snippet."
+        "bpm": 116,
+        "key": "G minor",
+        "camelot": "6A",
+        "confidence": "high",
+        "source_note": "Spotify Mix in-app data (user screenshot): 116 BPM, Camelot 6A. Supersedes earlier Tunebat estimate (125 BPM / C# major / 3B)."
       }
     },
     {
@@ -279,11 +279,11 @@
         "beatport": "https://www.beatport.com/track/with-you-friends-long-drive/27277765/"
       },
       "audio": {
-        "bpm": 120,
+        "bpm": 239,
         "key": "D major",
         "camelot": "10B",
-        "confidence": "medium",
-        "source_note": "Public Tunebat/Songstats snippet."
+        "confidence": "high",
+        "source_note": "Spotify Mix in-app data (user screenshot): 239 BPM, Camelot 10B. Supersedes earlier Tunebat estimate (120 BPM; Spotify reports double-time)."
       }
     },
     {
@@ -317,11 +317,11 @@
         "beatport": "https://www.beatport.com/track/think-big/13481732/"
       },
       "audio": {
-        "bpm": 134,
+        "bpm": 135,
         "key": "A# major",
         "camelot": "6B",
-        "confidence": "medium",
-        "source_note": "Public Tunebat snippet."
+        "confidence": "high",
+        "source_note": "Spotify Mix in-app data (user screenshot): 135 BPM, Camelot 6B (confirms key; BPM 135)."
       }
     }
   ]
