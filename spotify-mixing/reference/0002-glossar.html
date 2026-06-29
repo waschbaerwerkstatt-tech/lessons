@@ -19,29 +19,6 @@
       .entry h2 {
         margin: 0 0 6px;
       }
-
-      .wheel {
-        display: grid;
-        gap: 10px;
-        grid-template-columns: repeat(4, minmax(0, 1fr));
-        margin: 18px 0;
-      }
-
-      .wheel span {
-        border: 1px solid var(--line);
-        border-radius: 6px;
-        background: #fff;
-        font-family: ui-sans-serif, system-ui, sans-serif;
-        font-weight: 700;
-        padding: 10px 8px;
-        text-align: center;
-      }
-
-      @media (max-width: 560px) {
-        .wheel {
-          grid-template-columns: repeat(3, minmax(0, 1fr));
-        }
-      }
     </style>
   </head>
   <body>
@@ -74,12 +51,14 @@
           Die Zahlen laufen im Kreis. Nachbarn sind harmonisch nah; gegenueber
           liegt weit weg und erzeugt Spannung.
         </p>
-        <div class="wheel" aria-label="Camelot Zahlenring">
-          <span>12</span><span>1</span><span>2</span><span>3</span>
-          <span>11</span><span>Safe: +/-1</span><span>Gegenpol: +6</span><span>4</span>
-          <span>10</span><span>9</span><span>8</span><span>7</span>
-          <span>6</span><span>5</span><span>Letter A/B</span><span>gleiche Zahl</span>
-        </div>
+        <figure>
+          <img class="diagram" src="../assets/camelot-wheel.svg" alt="Camelot-Wheel mit A-Minor- und B-Major-Ring; 3A ist Start, 2A, 4A und 3B sind sichere Bewegungen, 9A ist als Curveball markiert">
+          <figcaption>
+            Eigene Kursgrafik: 3A als Startpunkt. Blau markiert die sicheren
+            Bewegungen; Orange markiert den Gegenpol als bewussten Curveball.
+            Die Tonartnamen sind englisch: B entspricht deutschem H, Bb deutschem B.
+          </figcaption>
+        </figure>
       </section>
 
       <section class="glossary">

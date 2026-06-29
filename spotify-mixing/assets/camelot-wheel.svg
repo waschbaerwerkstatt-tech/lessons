@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Camelot-Wheel fuer Spotify Mixing</title>
+  <desc id="desc">Zwei Ringe mit Camelot-Keys: A-Minor aussen, B-Major innen. 3A ist markiert; 2A, 4A und 3B sind sichere Bewegungen, 9A ist als Curveball markiert.</desc>
+  <defs>
+    <style>
+      .paper { fill: #fbfaf7; }
+      .ring { fill: none; stroke: #ded8cc; stroke-width: 2; }
+      .radial { stroke: #e8e1d5; stroke-width: 1.4; }
+      .safe { fill: #d9ebf7; stroke: #2f7bbd; stroke-width: 3; }
+      .home { fill: #ddefe5; stroke: #1f8a5b; stroke-width: 4; }
+      .curve { fill: #f7e0c2; stroke: #9a5b10; stroke-width: 3; }
+      .label { fill: #202124; font: 700 30px ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; text-anchor: middle; dominant-baseline: central; }
+      .key { fill: #60646f; font: 600 16px ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; text-anchor: middle; dominant-baseline: central; }
+      .caption { fill: #202124; font: 700 24px ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+      .note { fill: #60646f; font: 18px ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+      .legend-title { fill: #202124; font: 700 18px ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+      .legend-text { fill: #60646f; font: 15px ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    </style>
+  </defs>
+
+  <rect class="paper" width="1120" height="1000" rx="28" />
+
+  <text class="caption" x="72" y="72">Camelot-Wheel: sichere Nachbarn und bewusster Curveball</text>
+  <text class="note" x="72" y="105">A = Minor-Ring, B = Major-Ring. Beispiel aus dem Kurs: Start bei 3A.</text>
+
+  <g transform="translate(0 20)">
+    <circle class="ring" cx="460" cy="500" r="410" />
+    <circle class="ring" cx="460" cy="500" r="300" />
+    <circle class="ring" cx="460" cy="500" r="180" />
+    <circle class="ring" cx="460" cy="500" r="82" />
+
+    <line class="radial" x1="460" y1="90" x2="460" y2="910" />
+    <line class="radial" x1="665" y1="145" x2="255" y2="855" />
+    <line class="radial" x1="815" y1="295" x2="105" y2="705" />
+    <line class="radial" x1="870" y1="500" x2="50" y2="500" />
+    <line class="radial" x1="815" y1="705" x2="105" y2="295" />
+    <line class="radial" x1="665" y1="855" x2="255" y2="145" />
+
+    <circle class="home" cx="815" cy="500" r="52" />
+    <circle class="safe" cx="767" cy="323" r="48" />
+    <circle class="safe" cx="767" cy="678" r="48" />
+    <circle class="safe" cx="695" cy="500" r="45" />
+    <circle class="curve" cx="105" cy="500" r="48" />
+
+    <text class="note" x="460" y="484" text-anchor="middle">gleiche Zahl</text>
+    <text class="note" x="460" y="510" text-anchor="middle">A/B-Wechsel</text>
+    <text class="note" x="460" y="536" text-anchor="middle">ist verwandt</text>
+
+    <g>
+      <text class="label" x="460" y="145">12A</text><text class="key" x="460" y="176">C#m</text>
+      <text class="label" x="638" y="193">1A</text><text class="key" x="638" y="224">Abm</text>
+      <text class="label" x="767" y="323">2A</text><text class="key" x="767" y="354">Ebm</text>
+      <text class="label" x="815" y="500">3A</text><text class="key" x="815" y="531">Bbm</text>
+      <text class="label" x="767" y="678">4A</text><text class="key" x="767" y="709">Fm</text>
+      <text class="label" x="638" y="807">5A</text><text class="key" x="638" y="838">Cm</text>
+      <text class="label" x="460" y="855">6A</text><text class="key" x="460" y="886">Gm</text>
+      <text class="label" x="283" y="807">7A</text><text class="key" x="283" y="838">Dm</text>
+      <text class="label" x="153" y="678">8A</text><text class="key" x="153" y="709">Am</text>
+      <text class="label" x="105" y="500">9A</text><text class="key" x="105" y="531">Em</text>
+      <text class="label" x="153" y="323">10A</text><text class="key" x="153" y="354">Bm</text>
+      <text class="label" x="283" y="193">11A</text><text class="key" x="283" y="224">F#m</text>
+    </g>
+
+    <g>
+      <text class="label" x="460" y="265">12B</text><text class="key" x="460" y="294">E</text>
+      <text class="label" x="578" y="296">1B</text><text class="key" x="578" y="325">B</text>
+      <text class="label" x="664" y="383">2B</text><text class="key" x="664" y="412">F#</text>
+      <text class="label" x="695" y="500">3B</text><text class="key" x="695" y="529">Db</text>
+      <text class="label" x="664" y="618">4B</text><text class="key" x="664" y="647">Ab</text>
+      <text class="label" x="578" y="704">5B</text><text class="key" x="578" y="733">Eb</text>
+      <text class="label" x="460" y="735">6B</text><text class="key" x="460" y="764">Bb</text>
+      <text class="label" x="343" y="704">7B</text><text class="key" x="343" y="733">F</text>
+      <text class="label" x="256" y="618">8B</text><text class="key" x="256" y="647">C</text>
+      <text class="label" x="225" y="500">9B</text><text class="key" x="225" y="529">G</text>
+      <text class="label" x="256" y="383">10B</text><text class="key" x="256" y="412">D</text>
+      <text class="label" x="343" y="296">11B</text><text class="key" x="343" y="325">A</text>
+    </g>
+  </g>
+
+  <g transform="translate(910 252)">
+    <text class="caption" x="0" y="0">Leseregel</text>
+    <circle class="home" cx="18" cy="48" r="14" />
+    <text class="legend-title" x="44" y="48">Start</text>
+    <text class="legend-text" x="44" y="72">3A im Beispiel</text>
+
+    <circle class="safe" cx="18" cy="126" r="14" />
+    <text class="legend-title" x="44" y="126">Sicher</text>
+    <text class="legend-text" x="44" y="150">+/-1 oder A/B</text>
+
+    <circle class="curve" cx="18" cy="204" r="14" />
+    <text class="legend-title" x="44" y="204">Curveball</text>
+    <text class="legend-text" x="44" y="228">+6, bewusst kurz</text>
+
+    <text class="note" x="0" y="306">Spotify-Praxis:</text>
+    <text class="legend-text" x="0" y="334">Je weiter der Key-Sprung,</text>
+    <text class="legend-text" x="0" y="358">desto wichtiger werden</text>
+    <text class="legend-text" x="0" y="382">Cut, Filter und Phrase.</text>
+  </g>
+</svg>
